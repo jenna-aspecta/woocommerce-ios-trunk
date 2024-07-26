@@ -1,0 +1,21 @@
+AllCops:
+  Exclude:
+    - DerivedData/**/*
+    - Pods/**/*
+    - vendor/**/*
+  NewCops: enable
+
+Metrics/BlockLength:
+  Exclude:
+    - fastlane/Fastfile
+    - Podfile
+    - Rakefile
+
+Metrics/MethodLength:
+  Max: 30
+
+Layout/LineLength:
+  Max: 180
+
+Style/HashSyntax:
+  EnforcedShorthandSyntax: never

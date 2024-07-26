@@ -1,0 +1,1554 @@
+*** PLEASE FOLLOW THIS FORMAT: [<priority indicator, more stars = higher priority>] <description> [<PR URL>]
+
+19.7
+-----
+
+
+19.6
+-----
+
+- [*] Order Creation: Improved tax-inclusive product price presentation [https://github.com/woocommerce/woocommerce-ios/pull/13305]
+- [**] Product Creation AI: Milestone 1 which simplifies package photo flow and revamps UI. [https://github.com/woocommerce/woocommerce-ios/pull/13331]
+- [**] Stats: The Google Campaigns analytics card now supports selecting any available campaign metric. [https://github.com/woocommerce/woocommerce-ios/pull/13366]
+- [internal] Blaze: Check that product URL is not empty before campaign creation. [https://github.com/woocommerce/woocommerce-ios/pull/13351]
+- [Internal] Removed feature flag for product description AI [https://github.com/woocommerce/woocommerce-ios/pull/13334]
+- [Internal] Removed feature flag for product sharing AI [https://github.com/woocommerce/woocommerce-ios/pull/13337]
+- [Internal] Removed feature flag for product description AI tooltip [https://github.com/woocommerce/woocommerce-ios/pull/13341]
+- [Internal] Removed feature flag for the native Blaze campaign creation flow. [https://github.com/woocommerce/woocommerce-ios/pull/13356]
+- [Internal] Removed feature flag for dynamic dashboard M2. [https://github.com/woocommerce/woocommerce-ios/pull/13359]
+- [Internal] Removed store creation related code. [https://github.com/woocommerce/woocommerce-ios/pull/13379]
+
+19.5
+-----
+- [**] Cash Payment: Set the payment method and payment method title to orders completed with cash payment. [https://github.com/woocommerce/woocommerce-ios/pull/13257]
+
+19.4
+-----
+- [**] Stats: The Analytics Hub (accessed by tapping "View all store analytics" on the My Store dashboard) now includes analytics for Google Ads campaigns, when the Google Listings & Ads extension is active and connected to Google. [https://github.com/woocommerce/woocommerce-ios/pull/13245]
+- [***] Inbox Notes have been enabled in both the Dynamic Dashboard and the Hub Menu, offering users a centralized and non-intrusive method for receiving important updates, feature announcements, and pertinent information. [https://github.com/woocommerce/woocommerce-ios/pull/13214]
+
+19.3
+-----
+- [*] Blaze Campaigns: Added date range checks to ensure campaign start dates are within 60 days from today to avoid validation errors. [https://github.com/woocommerce/woocommerce-ios/pull/13124]
+- [*] Payments: fixed issue when connecting to a card reader after cancelling reader discovery [https://github.com/woocommerce/woocommerce-ios/issues/13125]
+- [*] Payments: fixed issue when connecting to a card reader after an error during reader connection [https://github.com/woocommerce/woocommerce-ios/pull/13126]
+- [*] Blaze i3: Implemented ux improvements for a more intuitive and streamlined interface. [https://github.com/woocommerce/woocommerce-ios/pull/13172]
+- [*] Payments: improved collect payment error handling, by checking whether the payment was actually successful on some errors [https://github.com/woocommerce/woocommerce-ios/pull/13165]
+
+19.2
+-----
+- [*] Internal: Add additional logs for payment gateway accounts missing requirements. [https://github.com/woocommerce/woocommerce-ios/pull/13078]
+- [*] The `Private` tag was not displayed for products set to private on the product list tab. [https://github.com/woocommerce/woocommerce-ios/pull/13083]
+- [*] Product Form: Support picking videos from local library for downloadable files. [https://github.com/woocommerce/woocommerce-ios/pull/13051]
+- [*] Disable bookable products from the order creation form. [https://github.com/woocommerce/woocommerce-ios/pull/13022]
+- [internal] Update: ZendeskSupportSDK from v6.0 to v.8.0.3 [https://github.com/woocommerce/woocommerce-ios/pull/12984]
+- [*] Order Creation: Fixes a bug where the customer list would not load when adding a customer to an order, if the store had a customer with no previous activity. [https://github.com/woocommerce/woocommerce-ios/pull/13094]
+- [*] Dynamic dashboard: Fix potential issue rendering Stock card when stock quantity is non-integer. [https://github.com/woocommerce/woocommerce-ios/pull/13098]
+
+19.1
+-----
+- [*] Added "Private" filter option for enhanced product filtering on iOS. [https://github.com/woocommerce/woocommerce-ios/pull/13009]
+- [*] Products: The creation sheet is now simplified and categorized better [https://github.com/woocommerce/woocommerce-ios/pull/12273]
+- [*] Restore a missing navigation bar on the privacy settings screen. [https://github.com/woocommerce/woocommerce-ios/pull/13018]
+- [**] Customers: The customers section (Menu > Customers) now includes registered customers' phone number and billing/shipping addresses, when available, with actions to copy their contact details or contact them via phone. [https://github.com/woocommerce/woocommerce-ios/pull/13034]
+- [*] Product form: Hide subscription product type options when site is ineligible for subscription products. [https://github.com/woocommerce/woocommerce-ios/pull/13049]
+- [**] Customers: You can now create a new order for registered customers in the Customers section (Menu > Customers). Tap the + button in a customer's details to create a new order with that customer pre-filled in the order form.
+
+
+19.0
+-----
+- [***] Now you can add more sections to the My Store screen including contents for the last orders, top products with low stock, top active coupons and more! [https://github.com/woocommerce/woocommerce-ios/pull/12890]
+- [internal] Resolved an issue where users were unable to upload product images when the store is set to private on WP.com. [https://github.com/woocommerce/woocommerce-ios/issues/12646]
+- [internal] Bump Tracks iOS library to v.3.4.1, that fix a deadlock while getting device info. [https://github.com/woocommerce/woocommerce-ios/pull/12939]
+
+18.9
+-----
+- [***] Explore our new Watch App to get glance of you store data and latest orders.
+- [*] Orders: Fixes an issue where adding shipping to an order without selecting a shipping method prevented the order from being created/updated. [https://github.com/woocommerce/woocommerce-ios/pull/12870]
+- [**] Orders: Multiple shipping lines can now be viewed, added, edited, or removed on orders; previously only the first shipping line on an order was supported. [https://github.com/woocommerce/woocommerce-ios/pull/12888]
+- [internal] Orders: An empty order list screen after applying filters no longer affects Dashboard cards eligibility. [https://github.com/woocommerce/woocommerce-ios/pull/12873]
+
+18.8
+-----
+- [*] Menu > Payments > Collect Payment: fix the the "card reader" & "Tap To Pay" payment methods where it was no-op before. [https://github.com/woocommerce/woocommerce-ios/pull/12801]
+- [internal] Optimize API calls sent for Dashboard screen. [https://github.com/woocommerce/woocommerce-ios/pull/12775]
+- [**] Adds edit support for the Min/Max Quantities extension in product details. [https://github.com/woocommerce/woocommerce-ios/pull/12758]
+
+18.7
+-----
+- [*] Resolved an issue where the image on the tutorial of application password on the iPad login page was displayed too large, improving the login experience for iPad users. [https://github.com/woocommerce/woocommerce-ios/pull/12759]
+
+18.7
+-----
+
+18.6
+-----
+- [*] Change text color in badge view in order products list to fix the dark mode readability. [https://github.com/woocommerce/woocommerce-ios/pull/12630]
+- [*] Speculative fix for a crash when opening order notifications [https://github.com/woocommerce/woocommerce-ios/pull/12643]
+- [internal] Show In-App feedback card in dashboard. [https://github.com/woocommerce/woocommerce-ios/pull/12636]
+- [*] Shipping: A shipping method can now be selected when adding or editing shipping on an order. [https://github.com/woocommerce/woocommerce-ios/pull/12688]
+
+18.5
+-----
+- [*] Barcode scanning: Fixed bug where variable parent products could be added to orders directly using the barcode scanner. [https://github.com/woocommerce/woocommerce-ios/pull/12576]
+
+18.4.1
+-----
+- [***] The application crashes when the `Charts` library attempts to calculate stride values for the y-axis with negative numbers, typically occurring when the data contains negative revenue (refunds). The issue is traced to the `NumberBins.init(size:range:)` method within the library, causing a crash seconds after app launch when viewing stats in the new Dynamic Dashboard. [https://github.com/woocommerce/woocommerce-ios/pull/12672]
+
+18.4
+-----
+- [*] Bug fix: tapping on the "Collect payment" quick action (long press on the app icon) or deeplink (http://woo.com/mobile/payments/collect-payment) now shows the order form instead of a blank view. [https://github.com/woocommerce/woocommerce-ios/pull/12559]
+- [internal] Blaze: Change campaign image minimum expected dimensions. [https://github.com/woocommerce/woocommerce-ios/pull/12544]
+
+
+18.3
+-----
+- [*] Fixed an issue where the "Reset Activity log" button did not clear the current day's log files, ensuring all logs are now properly reset when the button is pressed. [https://github.com/woocommerce/woocommerce-ios/pull/12479]
+
+18.2
+-----
+- [*] Menu > Payments > Collect Payment: the simple payments flow has been migrated to order form with custom amount. [https://github.com/woocommerce/woocommerce-ios/pull/12455]
+- [*] Login: Allow login using site credentials for Jetpack connected stores. [https://github.com/woocommerce/woocommerce-ios/pull/12429]
+- [internal] Updated all `woo.com` URLs to use `woocommerce.com` domain. [https://github.com/woocommerce/woocommerce-ios/pull/12452]
+- [*] Blaze: Validate that campaign image has minimum expected dimensions. [https://github.com/woocommerce/woocommerce-ios/pull/12470]
+
+18.1
+-----
+- [**] Orders: now it's possible to swiftly delete orders right from the Order Detail page.
+- [**] Stats: The Analytics Hub now includes analytics for Product Bundles and Gift Cards, when those extensions are active. [https://github.com/woocommerce/woocommerce-ios/pull/12425]
+- [*] Login: Fix issues in Jetpack installation feature. [https://github.com/woocommerce/woocommerce-ios/pull/12426]
+- [Internal] WooExpress: Site creation with WooExpress is now disabled. [https://github.com/woocommerce/woocommerce-ios/issues/12323]
+- [*] Product Creation AI: Update prompt to fix error during product creation. [https://github.com/woocommerce/woocommerce-ios/pull/12457]
+- [internal] Fix product package flow error by specifying json as response format. [https://github.com/woocommerce/woocommerce-ios/pull/12466]
+
+18.0
+-----
+- [**] Hub Menu: A new Customers section shows a searchable list of customers with their details, including the option to contact a customer via email. [https://github.com/woocommerce/woocommerce-ios/pull/12349]
+- [Internal] Update Woo Purple color palette [https://github.com/woocommerce/woocommerce-ios/pull/12330]
+- [internal] The dependency setup in `AppDelegate`'s `application(_:willFinishLaunchingWithOptions:)` was updated as an attempted fix for one of the top crashes. [https://github.com/woocommerce/woocommerce-ios/pull/12268]
+- [*] Order List: Speculative fix for a crash on the iPad when viewing orders [https://github.com/woocommerce/woocommerce-ios/pull/12369]
+
+17.9
+-----
+- [***] Blaze: revamped the Blaze advertising flow with a native implementation to enhance user experience. This allows merchants to seamlessly create and manage their campaigns directly within the Woo mobile apps, without opening the flow in a webview. [https://github.com/woocommerce/woocommerce-ios/pull/12361]
+- [**] Added 4 home screen quick actions: "New Order", "Orders", "Add a product", "Collect Payment" [https://github.com/woocommerce/woocommerce-ios/pull/12264/]
+- [Internal] Payments: Updated StripeTerminal pod to 3.3.1 [https://github.com/woocommerce/woocommerce-ios/pull/12078]
+
+17.8
+-----
+
+17.7
+-----
+- [***] [internal] Alamofire, which is the HTTP client library used in the app, has been updated to v5. [https://github.com/woocommerce/woocommerce-ios/pull/12125]
+- [internal] Blaze: Update campaign status values to match v1.1 endpoint. [https://github.com/woocommerce/woocommerce-ios/pull/12207]
+- [**] Orders: Merchants can filter orders by selecting a customer [https://github.com/woocommerce/woocommerce-ios/pull/12100]
+- [**] Login: Adds a small tutorial before presenting the web view application password authentication screen. [https://github.com/woocommerce/woocommerce-ios/pull/12240]
+- [**] Performance: Add a connectivity tool to diagnose possible network failures [https://github.com/woocommerce/woocommerce-ios/pull/12240]
+- [internal] Performance: Retries orders timeout errors [https://github.com/woocommerce/woocommerce-ios/pull/12240]
+- [**] My Store Analytics: Now a custom date range can be added for analyzing store performance in any arbitrary time ranges. [https://github.com/woocommerce/woocommerce-ios/pull/12243]
+- [***] Orders: Side-by-side view for Order Creation or Editing on iPad and larger iPhones [https://github.com/woocommerce/woocommerce-ios/pull/12246]
+
+
+
+17.6
+-----
+- Orders: Merchants can now contact their customers through WhatsApp and Telegram apps. [https://github.com/woocommerce/woocommerce-ios/pull/12099]
+- [internal] Blaze: Use v1.1 endpoint to load campaigns list. [https://github.com/woocommerce/woocommerce-ios/pull/12127]
+- Orders: Merchants can filter orders by selecting a product. [https://github.com/woocommerce/woocommerce-ios/pull/12129]
+- [**] Products tab: split view is now supported in the products tab. [https://github.com/woocommerce/woocommerce-ios/pull/12158]
+- [***] Stats: Merchants can now customize their analytics by enabling/disabling and reordering the cards in the Analytics Hub. [https://github.com/woocommerce/woocommerce-ios/pull/12156]
+
+
+17.5
+-----
+
+
+17.4
+-----
+- [***] Dropped iOS 15 support. From now we support iOS 16 and later. [https://github.com/woocommerce/woocommerce-ios/pull/11965]
+
+17.3
+-----
+- [***] Products: Cache product images to reduce network requests. [https://github.com/woocommerce/woocommerce-ios/pull/11902]
+- [***] Stats: The Analytics Hub now includes links to the full analytics report for each supported analytics card (Revenue, Orders, Products). [https://github.com/woocommerce/woocommerce-ios/pull/11920]
+- [**] Orders: Show the order attribution info in the order detail screen. [https://github.com/woocommerce/woocommerce-ios/pull/11963, https://github.com/woocommerce/woocommerce-ios/pull/11966]
+- [**] Orders: Orders have an associated receipt now. Receipts can be printed, or shared via other apps installed on device. The feature will become available for merchants with WooCommerce version of 8.7.0+. [https://github.com/woocommerce/woocommerce-ios/pull/11956]
+- [*] Products > product scanning: in wider devices, the product details after scanning a barcode does not show in split view with an empty secondary view anymore. Camera capture is also enabled when the app is in split mode with another app in iOS 16+ for supported devices. [https://github.com/woocommerce/woocommerce-ios/pull/11931]
+
+17.2
+-----
+- [*] Added configureDefaultBackgroundConfiguration(), updateDefaultBackgroundConfiguration() and listSelectedBackground for default cell selected background color [https://github.com/woocommerce/woocommerce-ios/pull/11777]
+- [*] Orders: the placeholder cells shown in the loading state have the animated redacted content again. [https://github.com/woocommerce/woocommerce-ios/pull/11842]
+- [*] Fixed arrow directions for RTL locales. [https://github.com/woocommerce/woocommerce-ios/pull/11833]
+- [*] Update Product Creation AI prompt to avoid unexpected response from AI. [https://github.com/woocommerce/woocommerce-ios/pull/11853]
+- [*] Fixed incorrect site URL when creating Blaze campaigns after switching stores. [https://github.com/woocommerce/woocommerce-ios/pull/11872]
+- [*] Orders in split view: when the store has no orders and then an order is created, the order list is now shown instead of the empty view. [https://github.com/woocommerce/woocommerce-ios/pull/11849]
+- [*] Fixed a crash in product description. [https://github.com/woocommerce/woocommerce-ios/pull/11865]
+- [*] Products: attempted fix of a crash when adding images [https://github.com/woocommerce/woocommerce-ios/pull/11843]
+
+17.1
+-----
+- [*] Fixed issue loading system status report for sites using faulty themes. [https://github.com/woocommerce/woocommerce-ios/pull/11798]
+- [*] Blaze: Hide the Blaze section on the Dashboard screen when logged in without WPCom. [https://github.com/woocommerce/woocommerce-ios/pull/11797]
+- [*] Shipping labels: Show the purchase and print flows in modal screens [https://github.com/woocommerce/woocommerce-ios/pull/11815]
+- [***] Orders: side-by-side view for Order List and Order Details on iPad (and large iPhones) [https://github.com/woocommerce/woocommerce-ios/pull/11818]
+
+17.0
+-----
+- [*] Payments: cash payment is now in fullscreen and supports entering a different amount paid by the customer with an option to record it in an order note. The calculated change due amount is also shown. [https://github.com/woocommerce/woocommerce-ios/pull/11365]
+- [internal] Analytics Hub: Sessions card (views and conversion rate) is now hidden for non-Jetpack stores, since they don't have those stats. [https://github.com/woocommerce/woocommerce-ios/pull/11694]
+- [*] Analytics Hub: Sessions card now shows a prompt for admins to enable Jetpack Stats if the Jetpack module is disabled. [https://github.com/woocommerce/woocommerce-ios/pull/11708]
+- [***] [internal] Refactor WP.com sign in API requests. [https://github.com/woocommerce/woocommerce-ios/pull/11734]
+
+16.9
+-----
+- [*] Order Creation/Editing: removed ability to delete an order line using the `-` button on the stepper, to avoid accidental deletion. [https://github.com/woocommerce/woocommerce-ios/pull/11651]
+- [internal] Product Creation AI: Change when and how many times we ask users to participate in survey. [https://github.com/woocommerce/woocommerce-ios/pull/11646]
+- [*] Order creation: after selecting a registered customer, the customer is now linked to the order. [https://github.com/woocommerce/woocommerce-ios/pull/11645]
+
+16.8
+-----
+- [**] Payments: merchants can collect payment directly from the order creation form [https://github.com/woocommerce/woocommerce-ios/pull/11490]
+- [*] Payments: order totals are now shown in an expandable drawer, so they're accessible without scrolling [https://github.com/woocommerce/woocommerce-ios/pull/11503]
+- [*] Store creation: Inform user once store ready if app killed while waiting for store to be ready. [https://github.com/woocommerce/woocommerce-ios/pull/11478]
+- [*] Dashboard: Resolves a decoding error with certain payment gateway plugins that previously caused an error loading data in the dashboard. [https://github.com/woocommerce/woocommerce-ios/pull/11489]
+- [*] Payments: Updated UI for Deposit Summary [https://github.com/woocommerce/woocommerce-ios/pull/11533]
+- [**] Lightweight Storefront: Added option to select themes for WPCom store in both Settings and Store Creation flows. [https://github.com/woocommerce/woocommerce-ios/issues/11291]
+- [*] Orders: order creation/paid/refund dates are now shown in the store time zone instead of the device time zone. [https://github.com/woocommerce/woocommerce-ios/pull/11539, https://github.com/woocommerce/woocommerce-ios/pull/11536]
+- [*] Similar to orders above, the latest time range in analytics is now in the store time zone instead of the device time zone. [https://github.com/woocommerce/woocommerce-ios/pull/11479]
+- [*] For JCP sites, Jetpack installation flow should now succeed without an error in the beginning. [https://github.com/woocommerce/woocommerce-ios/pull/11558]
+- [*] Login: logging in to self-hosted sites without Jetpack connection (with application password) on multiple devices of the same device family (iPhone/iPad) is now supported. Previously, the previously logged in device becomes logged out after logging in to the same account/store on a different device of the same device family.   [https://github.com/woocommerce/woocommerce-ios/pull/11575]
+- [*] Product bundles: bundle configuration form is now shown after scanning a bundle product with barcode in the order list or order form. [https://github.com/woocommerce/woocommerce-ios/pull/11610]
+- [internal] Dashboard: The "Add products to sell" products onboarding banner is removed from the dashboard (replaced by Add Product task in store onboarding task list) [https://github.com/woocommerce/woocommerce-ios/pull/11596]
+
+16.7
+-----
+- [*] Order editing: fixed bug preventing retry for errors when editing or creating an order [https://github.com/woocommerce/woocommerce-ios/pull/11391]
+- [*] Payments: Tap to Pay trial payments are now automatically refunded [https://github.com/woocommerce/woocommerce-ios/pull/11395]
+- [*] Product Creation AI: Show survey to collect user feedback. [https://github.com/woocommerce/woocommerce-ios/pull/11390]
+- [*] Edit Products: category list is now searchable. [https://github.com/woocommerce/woocommerce-ios/pull/11380]
+- [*] Show one time shipping setting status in product details screen. [https://github.com/woocommerce/woocommerce-ios/pull/11403]
+- [*] Remove features and challenges questions from the store creation profiler flow. [https://github.com/woocommerce/woocommerce-ios/pull/11410]
+- [*] Edit Products: make downloadable files more discoverable [https://github.com/woocommerce/woocommerce-ios/pull/11388]
+- [**] [internal] A minor refactor in authentication flow, including but not limited to social sign-in and two factor authentication. [https://github.com/woocommerce/woocommerce-ios/pull/11402]
+- [*] Login: after logging in from the `Create a New Store` CTA in the prologue screen, it should start the store creation flow. [https://github.com/woocommerce/woocommerce-ios/pull/11385]
+- [**] Products: Merchants now can scan product barcodes directly from the Product list in order to update inventory [https://github.com/woocommerce/woocommerce-ios/pull/11457]
+
+16.6
+-----
+- [**] Order form: quantity can now be typed in [https://github.com/woocommerce/woocommerce-ios/pull/11349]
+- [*] Payments: Supress displaying an error when the card reader connection is manually cancelled [https://github.com/woocommerce/woocommerce-ios/pull/11230]
+- [internal] Fix runtime warning when uploading media when built from Xcode 15 [https://github.com/woocommerce/woocommerce-ios/pull/11355]
+- [*] Products: Downloadable products now accept local files of types other than images. [https://github.com/woocommerce/woocommerce-ios/pull/11353]
+- [*] Products: Downloadable products now accept file types other than images from WordPress media library. [https://github.com/woocommerce/woocommerce-ios/pull/11356]
+- [*] Payments menu: restored the ability to search for Payments in device Spotlight. [https://github.com/woocommerce/woocommerce-ios/pull/11343]
+- [*] Payments menu: show the selected payment gateway when there's more than one to choose from [https://github.com/woocommerce/woocommerce-ios/pull/11345]
+- [**] Fixed a crash that occurred when reordering product images during the image upload process. Now, users will not be able to reorder images until the upload is complete, providing a smoother and more stable experience. [https://github.com/woocommerce/woocommerce-ios/pull/11350]
+- [internal] Process network response in background thread to avoid blocking main thread. [https://github.com/woocommerce/woocommerce-ios/pull/11381]
+- [**] Attempted to fix a crash that has been occurring for some users during magic link login. [https://github.com/woocommerce/woocommerce-ios/pull/11373]
+- [*] Fixed a crash due to using unavailable system image in devices below iOS 16.0. [https://github.com/woocommerce/woocommerce-ios/pull/11394]
+
+16.5
+-----
+- [*] Payments: WooPayments merchants can swipe between currencies in the Deposit Summary on the Payments menu [https://github.com/woocommerce/woocommerce-ios/pull/11309]
+- [**] Shipping Labels: Fixed issue presenting the printing view for customs forms. [https://github.com/woocommerce/woocommerce-ios/pull/11288]
+- [*] Now, merchants can manage "One time shipping" setting for a subscription product. [https://github.com/woocommerce/woocommerce-ios/pull/11310]
+- [**] My Store: The Blaze section is now dismissible. [https://github.com/woocommerce/woocommerce-ios/pull/11308]
+- [internal] Product Subscriptions: Handle yearly Synchronise renewals case while enabling One time shipping setting. [https://github.com/woocommerce/woocommerce-ios/pull/11312]
+- [internal] Order form: Updated design for product bundles and their bundled items in order creation/editing, to more clearly show the hierarchy and bundled item prices. [https://github.com/woocommerce/woocommerce-ios/pull/11321]
+- [internal] Update Shimmer dependency to avoid high CPU and memory use crashing the app when built with Xcode 15 [https://github.com/woocommerce/woocommerce-ios/pull/11320]
+- [internal] Fix issue with scrolling some views when built from Xcode 15 [https://github.com/woocommerce/woocommerce-ios/pull/11335]
+- [*] Animate display of the onboarding notice in the payments menu [https://github.com/woocommerce/woocommerce-ios/pull/11339]
+
+16.4
+-----
+- [internal] Adds `store_id` to track events. [https://github.com/woocommerce/woocommerce-ios/pull/11227]
+- [Internal] Payments: Updated StripeTerminal pod to 3.1.0 [https://github.com/woocommerce/woocommerce-ios/pull/11080]
+- [internal] Payments: Restored analytics for Payments Menu after SwiftUI rewrite [https://github.com/woocommerce/woocommerce-ios/pull/11262]
+- [***] Merchants can now create or edit subscription products. [https://github.com/woocommerce/woocommerce-ios/issues/11183]
+- [*] Order form: when adding/updating a bundle with an optional & non-selected variable item, any other bundled items should be added/updated properly. [https://github.com/woocommerce/woocommerce-ios/pull/11254]
+- [internal] Order form: Fix a bug where the wrong product details appeared when adding a discount to a product in an order. [https://github.com/woocommerce/woocommerce-ios/pull/11280]
+- [*] Now the Blaze section in the Dashboard (My store tab) is displayed under the Stats. Before, it was on top of the view. [https://github.com/woocommerce/woocommerce-ios/pull/11275]
+
+16.3
+-----
+- [internal] Payments Menu: rewritten in SwiftUI [https://github.com/woocommerce/woocommerce-ios/pull/11169]
+- [*] Orders: users can now calculate a custom amount based on the order total percentage. [https://github.com/woocommerce/woocommerce-ios/pull/11154]
+- [*] Orders: users can now decide whether their custom amounts are taxable or not. [https://github.com/woocommerce/woocommerce-ios/pull/11156]
+- [*] Order form: the merchant can now configure a bundle product (quantity and variation attributes of the bundled products). Testing plan: pe5pgL-3Ze-p2 [https://github.com/woocommerce/woocommerce-ios/pull/11186]
+- [internal] Updated all `woocommerce.com` URLs to use `woo.com` domain [https://github.com/woocommerce/woocommerce-ios/pull/11182]
+
+16.2
+-----
+- [**] Orders: order details show custom amounts on their own section. Other fields are re-designed towards a cleaner look. [https://github.com/woocommerce/woocommerce-ios/pull/11097]
+- [*] Add support for Universal Links in the woo.com domain [https://github.com/woocommerce/woocommerce-ios/pull/11098]
+- [*] Order form: when adding a product/variation by scanning a barcode, only the product/variation with the exact SKU should be added to the order. [https://github.com/woocommerce/woocommerce-ios/pull/11089]
+
+16.1
+-----
+- [**] Orders: order creation sections are optimised for a simpler and more intuitive flow. [https://github.com/woocommerce/woocommerce-ios/pull/11042]
+- [*] Payments: Fix Tap to Pay reconnection on foreground, to speed up TTP transactions. [https://github.com/woocommerce/woocommerce-ios/pull/11054]
+- [*] Payments: Fix Tap to Pay reconnection on fresh launch, to speed up TTP transactions. [https://github.com/woocommerce/woocommerce-ios/pull/11056]
+- [*] Orders: Fix a bug that shows the wrong customer screen during the order creation flow. [https://github.com/woocommerce/woocommerce-ios/pull/11053]
+- [*] Orders: All order edit buttons render now with the pencil system image to make them consistent. [https://github.com/woocommerce/woocommerce-ios/pull/11048]
+
+16.0
+-----
+- [*] Optimized Blaze experience in My store. Improved Blaze campaign creation and list screens. [https://github.com/woocommerce/woocommerce-ios/pull/10969, https://github.com/woocommerce/woocommerce-ios/pull/10959]
+- [*] Orders: Fixed UI issue where an incorrect tooltip is displayed during Order Creation [https://github.com/woocommerce/woocommerce-ios/pull/10998]
+- [*] Orders: Fixed UI issue showing incorrect discounted total product value in certain cases [https://github.com/woocommerce/woocommerce-ios/pull/11016]
+- [*] Fix a crash on launch related to Core Data and Tracks [https://github.com/woocommerce/woocommerce-ios/pull/10994]
+- [*] Login: Fixed issue checking site info for some users. [https://github.com/woocommerce/woocommerce-ios/pull/11006]
+- [**] Orders: Users can now add custom amounts to orders. [https://github.com/woocommerce/woocommerce-ios/pull/11022]
+- [*] Payments: hide the `Set up Tap to Pay` button in About Tap to Pay when set up is complete [https://github.com/woocommerce/woocommerce-ios/pull/11025]
+
+15.9
+-----
+- [***] User can now use their stored passkeys to log in into WordPress.com [https://github.com/woocommerce/woocommerce-ios/pull/10904]
+- [***] Payments: UK-based merchants can take payments using Tap to Pay on iPhone [https://github.com/woocommerce/woocommerce-ios/pull/10957]
+- [*] App login links are now handled when the onboarding screen is shown. [https://github.com/woocommerce/woocommerce-ios/pull/10974]
+
+15.8
+-----
+- [*] Users can now navigate to other orders without leaving the Order Detail screen. [https://github.com/woocommerce/woocommerce-ios/pull/10849]
+- [*] The Set up Tap to Pay on iPhone row in the Payments menu now reflects when you've completed set up for the current device and store [https://github.com/woocommerce/woocommerce-ios/pull/10923]
+- [*] The Set up Tap to Pay on iPhone Learn More button opens more details about Tap to Pay [https://github.com/woocommerce/woocommerce-ios/pull/10934]
+- [internal] Use minimumAllowedChargeAmount, not 0.50, for the Try a Payment flow [https://github.com/woocommerce/woocommerce-ios/pull/10937]
+- [*] Changes to the Payments menu to make it clearer [https://github.com/woocommerce/woocommerce-ios/pull/10936]
+- [*] Order creation: We updated the UX by allowing direct product discounts to be added, and improved the Product Discount screen [https://github.com/woocommerce/woocommerce-ios/pull/10929]
+
+15.7
+-----
+- [*] Generate new tags/categories while creating product using AI. [https://github.com/woocommerce/woocommerce-ios/pull/10864]
+- [*] Fix: in order details where an order item is a variable product with attributes and has add-ons, the variation attributes are shown now. [https://github.com/woocommerce/woocommerce-ios/pull/10877]
+
+15.6
+-----
+- [**] Taxes in orders: Users can now store the tax rate's location to add it automatically to a new order customer's address. [https://github.com/woocommerce/woocommerce-ios/pull/10802]
+- [**] WPCOM stores and self-hosted stores with Jetpack AI plugin can now create products using AI. [https://github.com/woocommerce/woocommerce-ios/pull/10812]
+- [*] Order form: the merchant can apply a gift card to an order. [https://github.com/woocommerce/woocommerce-ios/pull/10759]
+
+15.5
+-----
+- [*] Store creation: Start store creation flow after a new WPCOM account sign up. [https://github.com/woocommerce/woocommerce-ios/pull/10729]
+- [*] Different orders with the same gift card code applied should all show the gift card info in order details now. [https://github.com/woocommerce/woocommerce-ios/pull/10719]
+- [*] Enabled product description and product sharing AI features for self-hosted sites with Jetpack AI plugin. [https://github.com/woocommerce/woocommerce-ios/pull/10747]
+- [*] Order form: the applied gift cards are shown below the coupon section. [https://github.com/woocommerce/woocommerce-ios/pull/10743]
+
+15.4
+-----
+- [*] Enable editing product details when tapping on order item on the order detail screen. [https://github.com/woocommerce/woocommerce-ios/pull/10632]
+- [*] Taxes in orders: Add empty state design for the Tax Rate selector. [https://github.com/woocommerce/woocommerce-ios/pull/10665]
+- [*] Added protection against accidental double-charging with In-Person Payments in poor network conditions [https://github.com/woocommerce/woocommerce-ios/pull/10647]
+- [**] Improved retry handling for In-Person Payments that fail [https://github.com/woocommerce/woocommerce-ios/pull/10673]
+- [*] See more of your order by long pressing an order push notification. [https://github.com/woocommerce/woocommerce-ios/pull/10658]
+- [*] Order details: product add-ons for a line item are shown in separate lines for better readability. [https://github.com/woocommerce/woocommerce-ios/pull/10661]
+- [**] Product categories now can be deleted as part of the product editing flow. [https://github.com/woocommerce/woocommerce-ios/pull/10643]
+- [**] Product categories can now be updated as part of the product editing flow. [https://github.com/woocommerce/woocommerce-ios/pull/10648]
+
+15.3
+-----
+- [internal] Add `site_url` to Tracks events [https://github.com/woocommerce/woocommerce-ios/pull/10610]
+- [Internal] Some internal changes were made to the image upload feature to support image processing in the app, no app changes are expected. [https://github.com/woocommerce/woocommerce-ios/pull/10631]
+- [**] Taxes in orders: Users can now select the tax rate's location to add it to the order customer's address. [https://github.com/woocommerce/woocommerce-ios/pull/10651]
+- [*] Automatically show the media selector sheet on the product images screen when there are no pre-existing images. [https://github.com/woocommerce/woocommerce-ios/pull/10644]
+
+15.2
+-----
+- [*] Fixed minor UI issues in the store creation profiler flow. [https://github.com/woocommerce/woocommerce-ios/pull/10555]
+- [*] Updated priority, description and URL for payment onboarding task. [https://github.com/woocommerce/woocommerce-ios/pull/10572]
+- [*] New setup instructions screen for WCPay store onboarding task. [https://github.com/woocommerce/woocommerce-ios/pull/10579]
+- [*] Show celebration view after successful WCPay setup. [https://github.com/woocommerce/woocommerce-ios/pull/10594]
+- [**] Taxes in orders: Users can now see the order tax rates, get more information about them, and navigate to wp-admin to change them. [https://github.com/woocommerce/woocommerce-ios/pull/10569]
+
+
+15.1
+-----
+- [*] What's New announcements support dark mode properly [https://github.com/woocommerce/woocommerce-ios/pull/10540]
+- [*] Updated UI and copy on prologue and free trial summary screens. [https://github.com/woocommerce/woocommerce-ios/pull/10539]
+
+15.0
+-----
+- [*] The store name can now be updated from the Settings screen. [https://github.com/woocommerce/woocommerce-ios/pull/10485]
+- [**] The store creation flow has been optimized to start store creation immediately and show profiler questions afterward. [https://github.com/woocommerce/woocommerce-ios/pull/10473, https://github.com/woocommerce/woocommerce-ios/pull/10466]
+- [*] Settings: Close Account option is moved to a new section Account Settings and is now available for all WPCom users. [https://github.com/woocommerce/woocommerce-ios/pull/10502]
+
+14.9
+-----
+- [*] Only show Blaze banner on the My Store and Product List screens if the store has no existing orders. [https://github.com/woocommerce/woocommerce-ios/pull/10438]
+- [**] Order creation: We improved the way the merchants can request, search and select a customer when creating an order. [https://github.com/woocommerce/woocommerce-ios/pull/10456]
+
+
+14.8
+-----
+- [Internal] Native store creation flow with free trial is enabled by default - all code for the old flows have been removed. [https://github.com/woocommerce/woocommerce-ios/pull/10362]
+- [*] Store creation: Improvements to the Upgrades screen accessibility [https://github.com/woocommerce/woocommerce-ios/pull/10363]
+- [*] Stores with expired WooExpress plans can now be upgraded within the app (if eligible for IAP) via a new banner. [https://github.com/woocommerce/woocommerce-ios/pull/10369]
+- [*] The expired site plan should navigate to IAP for sites with expired WooExpress plans (if eligible for IAP). [https://github.com/woocommerce/woocommerce-ios/pull/10384]
+- [Internal] New default property `plan` is tracked in every event for logged-in users. [https://github.com/woocommerce/woocommerce-ios/pull/10356]
+- [Internal] Google sign in now defaults to bypassing the Google SDK [https://github.com/woocommerce/woocommerce-ios/pull/10341]
+- [*] Product list filter (Products tab and order creation > add products > filter): product types from extensions supported in the app are now available for product filtering - subscription, variable subscription, bundle, and composite. [https://github.com/woocommerce/woocommerce-ios/pull/10382]
+ 
+14.7
+-----
+- [*] Local notifications: Add a reminder to purchase a plan is scheduled 6hr after a free trial subscription. [https://github.com/woocommerce/woocommerce-ios/pull/10268]
+- [Internal] Shipment tracking is only enabled and synced when the order has non-virtual products.  [https://github.com/woocommerce/woocommerce-ios/pull/10288]
+- [Internal] New default property `was_ecommerce_trial` is tracked in every event for logged-in users. [https://github.com/woocommerce/woocommerce-ios/pull/10343]
+- [*] Photo -> Product: Reset details from previous image when new image is selected. [https://github.com/woocommerce/woocommerce-ios/pull/10297]
+- [**] You can now see your shipping zone list from Settings. [https://github.com/woocommerce/woocommerce-ios/pull/10258]
+- [*] Order list: Suggest testing orders for stores without any orders. [https://github.com/woocommerce/woocommerce-ios/pull/10346]
+- [*] Local notifications: Show free trial survey after 24h since subscription. [https://github.com/woocommerce/woocommerce-ios/pull/10324, https://github.com/woocommerce/woocommerce-ios/pull/10328]
+- [*] Local notifications: Add a reminder after 3 days if answered "Still Exploring" in Free trial survey. [https://github.com/woocommerce/woocommerce-ios/pull/10331]
+- [*] Product description AI: the AI sheet has been improved with the product name field made more prominent. [https://github.com/woocommerce/woocommerce-ios/pull/10333]
+- [**] Store creation: US users can upgrade to a choice of plans for their store via In-App Purchase [https://github.com/woocommerce/woocommerce-ios/pull/10340]
+
+14.6
+-----
+- [Internal] Switched AI endpoint to be able to track and measure costs. [https://github.com/woocommerce/woocommerce-ios/pull/10218]
+- [Internal] Media picker flow was refactored to support interactive dismissal for device photo picker and WordPress media picker sources. Affected flows: product form > images, and virtual product form > downloadable files. [https://github.com/woocommerce/woocommerce-ios/pull/10236]
+- [Internal] Errors: Improved error message when orders, products, or reviews can't be loaded due to a parsing (decoding) error. [https://github.com/woocommerce/woocommerce-ios/pull/10252, https://github.com/woocommerce/woocommerce-ios/pull/10260]
+- [*] Orders with Coupons: Users can now select a coupon from a list when adding it to an order. [https://github.com/woocommerce/woocommerce-ios/pull/10255]
+- [Internal] Orders: Improved error message when orders can't be loaded due to a parsing (decoding) error. [https://github.com/woocommerce/woocommerce-ios/pull/10252]
+- [**] Product discounts: Users can now add discounts to products when creating an order. [https://github.com/woocommerce/woocommerce-ios/pull/10244]
+- [*] We've resolved an issue that was causing the app to crash when trying to dismiss certain screens (bottom sheets). [https://github.com/woocommerce/woocommerce-ios/pull/10254]
+- [Internal] Fixed a bug preventing the "We couldn't load your data" error banner from appearing on the My store dashboard. [https://github.com/woocommerce/woocommerce-ios/pull/10262]
+- [Internal] Errors: Improved error message and troubleshooting guide when the Jetpack connection is broken. [https://github.com/woocommerce/woocommerce-ios/pull/10275]
+- [Internal] A new way to create a product from an image using AI is being A/B tested. [https://github.com/woocommerce/woocommerce-ios/pull/10253]
+
+14.5
+-----
+- [*] Product details: The share button is displayed with text instead of icon for better discoverability. [https://github.com/woocommerce/woocommerce-ios/pull/10216]
+- [*] Resolved an issue where users were unable to add a new note to an order. Previously, upon opening an order detail and selecting the "Add a new note" option, the text field was non-selectable, preventing users from writing down the note. This issue has now been addressed and users should be able to add notes to their orders without any issues. [https://github.com/woocommerce/woocommerce-ios/pull/10222]
+- [*] Store creation: Update the timeout view with the option to retry the site check. [https://github.com/woocommerce/woocommerce-ios/pull/10221]
+- [*] Fixed issue showing the expired alert for sites that got reverted to simple sites after their plan expired. [https://github.com/woocommerce/woocommerce-ios/pull/10228]
+
+14.4
+-----
+- [*] Blaze: New banner on the My Store and Products screens for admins of eligible stores. [https://github.com/woocommerce/woocommerce-ios/pull/10135, https://github.com/woocommerce/woocommerce-ios/pull/10160, https://github.com/woocommerce/woocommerce-ios/pull/10172]
+- [*] Shipping Labels: Fixed a bug preventing label printing in orders viewed from search [https://github.com/woocommerce/woocommerce-ios/pull/10161]
+- [*] Blaze: Disable the entry point in the product creation form. [https://github.com/woocommerce/woocommerce-ios/pull/10173]
+- [*] Product description and sharing message AI: Fixed incorrect language issue by using a separate prompt for identifying language. [https://github.com/woocommerce/woocommerce-ios/pull/10169, https://github.com/woocommerce/woocommerce-ios/pull/10177, https://github.com/woocommerce/woocommerce-ios/pull/10179]
+
+14.3
+-----
+- [*] SKU Scanner: Add the SKU to the error message after a failure. [https://github.com/woocommerce/woocommerce-ios/pull/10085]
+- [*] Add URL route handler to open the `My Store` tab when a deeplink to `/mobile` is opened, instead of bouncing back to Safari [https://github.com/woocommerce/woocommerce-ios/pull/10077]
+- [Internal] Performance: Replaces the endpoint used to load Top Performers on the My Store tab, for faster loading. [https://github.com/woocommerce/woocommerce-ios/pull/10113]
+- [*] A feedback banner is added for product description AI and product sharing AI sheets. [https://github.com/woocommerce/woocommerce-ios/pull/10102]
+- [*] Product creation: the product type row is now editable when creating a product. [https://github.com/woocommerce/woocommerce-ios/pull/10087]
+- [***] Store creation: US users can upgrade Woo Express free trial stores via In-App Purchase [https://github.com/woocommerce/woocommerce-ios/pull/10123]
+- [*] Orders: Users can can now add multiple coupons to orders (not only one) [https://github.com/woocommerce/woocommerce-ios/pull/10126]
+- [*] Free trial: Local notification after 24 hours since Free trial subscription time to remind to purchase plan. [https://github.com/woocommerce/woocommerce-ios/pull/10133, https://github.com/woocommerce/woocommerce-ios/pull/10130]
+- [**] Product description AI: an announcement modal is shown for WPCOM stores about the feature, and a new CTA "Write with AI" is more discoverable in the product form with a tooltip. [https://github.com/woocommerce/woocommerce-ios/pull/10142]
+
+14.2
+-----
+- [Internal] Blaze status check was updated to save an API request. The Blaze eligibility for each site should remain the same. [https://github.com/woocommerce/woocommerce-ios/pull/10020]
+- [*] Fixed the unusable state of the app when the default store runs on an expired free trial plan. [https://github.com/woocommerce/woocommerce-ios/pull/10059]
+- [Internal] Performance: When loading the refunds on an order (e.g. in order details), we now only request them from remote if they are not already in local storage. [https://github.com/woocommerce/woocommerce-ios/pull/10039]
+- [*] Orders: Users can can now add coupons to orders [https://github.com/woocommerce/woocommerce-ios/pull/10035]
+- [*] Coupons: The Coupons Management feature is fully released and not in Beta anymore [https://github.com/woocommerce/woocommerce-ios/pull/10032]
+- [*] Store creation: the progress view copy was updated to inform the merchants that it can take a few minutes for the store to be ready. The progress view is now only shown after necessary requests are made before the app is likely backgrounded. The error handling is also polished.  [https://github.com/woocommerce/woocommerce-ios/pull/10047, https://github.com/woocommerce/woocommerce-ios/pull/10069]
+- [Internal] Performance: When loading a single order (e.g. in order details), we now load the order from storage unless it has been modified remotely. [https://github.com/woocommerce/woocommerce-ios/pull/10036]
+- [Internal] Performance: When the Orders tab is opened, we now only sync orders that have been created or modified since the last successful sync. [https://github.com/woocommerce/woocommerce-ios/pull/10065]
+- [Internal] App size: Replaced 30MB PDFs on Store Creation waiting screen with ~400KB PNGs - to assess impact on app bundle size. [https://github.com/woocommerce/woocommerce-ios/pull/10067]
+
+14.1
+-----
+- [*] Plans: Expired or cancelled plans are now shown more reliably [https://github.com/woocommerce/woocommerce-ios/pull/9924]
+- [*] Product Sharing: AI-generated messages are now available. [https://github.com/woocommerce/woocommerce-ios/pull/9976]
+- [***] Orders: Users can add products to orders by scanning their sku barcode or QR-code [https://github.com/woocommerce/woocommerce-ios/pull/9972]
+- [Internal] Store creation: a workaround was previously implemented that can result in an inaccurate app experience like when the free trial banner is not shown immediately after store creation due to out-of-sync site properties. Now that the API issue is fixed, the app now waits for the site for a bit longer but ensures all necessary properties are synced. [https://github.com/woocommerce/woocommerce-ios/pull/9957]
+- [Internal] Product details AI: Updated prompts to identify the language in provided text to use in responses for product description and sharing. [https://github.com/woocommerce/woocommerce-ios/pull/9961]
+- [*] Blaze: products can now be promoted in WordPress.com and Tumblr from the app if the site/product is eligible. Two entry points: 1) Menu tab > General, 2) Product form > more menu. [https://github.com/woocommerce/woocommerce-ios/pull/9906]
+
+14.0
+-----
+- [*] Payments: Remove the upsell-card-readers banner from the Payment Methods Screen [https://github.com/woocommerce/woocommerce-ios/pull/9869]
+
+
+13.9
+-----
+- [*] Orders: Allow alternative types for the `taxID` in `ShippingLineTax` or `sku` in `OrderItem`, as some third-party plugins alter the type in the API. This helps with the order list not loading due to order decoding errors. [https://github.com/woocommerce/woocommerce-ios/pull/9844]
+- [*] Payments: Location permissions request is not shown to TTP users who grant "Allow once" permission on first foregrounding the app any more [https://github.com/woocommerce/woocommerce-ios/pull/9821]
+- [*] Products: Allow alternative types for `stockQuantity` in `Product` and `ProductVariation`, as some third-party plugins alter the type in the API. This helps with the product list not loading due to product decoding errors. [https://github.com/woocommerce/woocommerce-ios/pull/9850]
+- [*] Products: Allow alternative types for the `backordersAllowed` and `onSale` in `Product` and `ProductVariation`, as some third-party plugins alter the types in the API. This helps with the product list not loading due to product decoding errors. [https://github.com/woocommerce/woocommerce-ios/pull/9849]
+- [*] Products: Allow alternative types for the `sku` and `weight` in `ProductVariation`, as some third-party plugins alter the types in the API. This helps with the product variation list not loading due to product variation decoding errors. [https://github.com/woocommerce/woocommerce-ios/pull/9847]
+- [*] Products: Allow alternative types for the `sku` and `weight` in `Product`, the dimensions in `ProductDimensions`, and the `downloadID` in `ProductDownload`, as some third-party plugins alter the types in the API. This helps with the product list not loading due to product decoding errors. [https://github.com/woocommerce/woocommerce-ios/pull/9846]
+- [*] Products: Add support for parsing variation objects for the `variations` field in `Product`, as some third-party plugins alter the type for this field in the API. This allows the variations to be loaded for variable products if those third-party plugins are active. [https://github.com/woocommerce/woocommerce-ios/pull/9857]
+
+13.8
+-----
+- [Internal] Orders: Bundled products (within a product bundle) are now indented, to show their relationship to the parent bundle. [https://github.com/woocommerce/woocommerce-ios/pull/9778]
+- [Internal] Orders: Composite components (within a composite product) are now indented, to show their relationship to the parent composite product. [https://github.com/woocommerce/woocommerce-ios/pull/9780]
+- [*] Add Products: A new view is display to celebrate when the first product is created in a store. [https://github.com/woocommerce/woocommerce-ios/pull/9790]
+- [*] Product List: Added swipe-to-share gesture on product rows. [https://github.com/woocommerce/woocommerce-ios/pull/9799]
+- [*] Product form: a share action is shown in the navigation bar if the product can be shared and no more than one action is displayed, in addition to the more menu > Share. [https://github.com/woocommerce/woocommerce-ios/pull/9789]
+- [*] Payments: show badges leading to Set up Tap to Pay on iPhone for eligible stores and devices [https://github.com/woocommerce/woocommerce-ios/pull/9812]
+- [*] Orders: Fixes a bug where the Orders list would not load if an order had a non-integer gift card amount applied to the order (with the Gift Cards extension). [https://github.com/woocommerce/woocommerce-ios/pull/9795]
+
+- [*] My Store: A new button to share the current store is added on the top right of the screen. [https://github.com/woocommerce/woocommerce-ios/pull/9796]
+- [*] Mobile Payments: The screen brightness is increased when showing the Scan to Pay view so the QR code can be scanned more easily [https://github.com/woocommerce/woocommerce-ios/pull/9807]
+- [*] Mobile Payments: The Woo logo is added to the QR code on the Scan to Pay screen [https://github.com/woocommerce/woocommerce-ios/pull/9823]
+- [*] Allow EU merchants to have better control of their privacy choices. A privacy choices banner will be shown the next time they open the app. [https://github.com/woocommerce/woocommerce-ios/pull/9825]
+
+13.7
+-----
+- [Internal] Adds guidance for new Customs rule when shipping to some EU countries. [https://github.com/woocommerce/woocommerce-ios/pull/9715]
+- [*] JITMs: Added modal-style Just in Time Message support on the dashboard [https://github.com/woocommerce/woocommerce-ios/pull/9694]
+- [**] Order Creation: Products can be searched by SKU when adding products to an order. [https://github.com/woocommerce/woocommerce-ios/pull/9711]
+- [*] Orders: Fixes order details so separate order items are not combined just because they are the same product or variation. [https://github.com/woocommerce/woocommerce-ios/pull/9710]
+- [Internal] Store creation: starting May 4, store creation used to time out while waiting for the site to be ready (become a Jetpack/Woo site). A workaround was implemented to wait for the site differently. [https://github.com/woocommerce/woocommerce-ios/pull/9767]
+- [**] Mobile Payments: Tap to Pay is initialised on launch or foreground, to speed up payments [https://github.com/woocommerce/woocommerce-ios/pull/9750]
+- [*] Store Creation: Local notifications are used to support users during the store creation process. [https://github.com/woocommerce/woocommerce-ios/pull/9717, https://github.com/woocommerce/woocommerce-ios/pull/9719, https://github.com/woocommerce/woocommerce-ios/pull/9749]
+- [**] Mobile Payments: Merchants can now collect in-person payments by showing a QR code to their customers. [https://github.com/woocommerce/woocommerce-ios/pull/9762]
+- [Internal] Orders: Bundled products (within a product bundle) are now indented, to show their relationship to the parent bundle. [https://github.com/woocommerce/woocommerce-ios/pull/9778]
+
+13.6
+-----
+- [*] Remove login error local notifications that used to be scheduled 24 hours from certain login errors. [https://github.com/woocommerce/woocommerce-ios/pull/9666]
+- [*] JITMs: Added customization to Just in Time Message banner background and badges [https://github.com/woocommerce/woocommerce-ios/pull/9633]
+- [*] Product form > description editor: fix the extra bottom inset after hiding the keyboard either manually (available on a tablet) or applying an AI-generated product description. [https://github.com/woocommerce/woocommerce-ios/pull/9638]
+- [*] Products: Fixes stock statuses for Product Bundles so that backordered bundles and bundle stock quantities are displayed as expected. [https://github.com/woocommerce/woocommerce-ios/pull/9681]
+
+13.5
+-----
+- [*] Settings > Domains: Premium domains are now supported, the domain suggestions now match the results on web and Android. It's more noticeable for stores with a domain credit, where not all domains are free for the first year anymore. [https://github.com/woocommerce/woocommerce-ios/pull/9607]
+- [*] Product form > Inventory: the SKU scanner is enabled for all users, where it used to be behind a feature switch in Settings > Experimental Features. [https://github.com/woocommerce/woocommerce-ios/pull/9631]
+[Internal] Products: Simplify Product Editing experiment is removed; there should be no changes to the existing product creation/editing behavior. [https://github.com/woocommerce/woocommerce-ios/pull/9602]
+- [*] Payments: Products are removed directly from an order when its count is below one, instead of opening an extra screen to remove it. [https://github.com/woocommerce/woocommerce-ios/pull/9624]
+- [*] Orders: Parses HTML-encoded characters and removes extraneous, non-attribute meta data from the list of attributes for an item in an order. [https://github.com/woocommerce/woocommerce-ios/pull/9603]
+- [*] Products: Adds the component descriptions to the list of components in a composite product (using the Composite Products extension). [https://github.com/woocommerce/woocommerce-ios/pull/9634]
+- [*] Products: Adds the product SKU to the bundled products list in product details, for Bundle products (using the Product Bundles extension). [https://github.com/woocommerce/woocommerce-ios/pull/9626]
+- [*] Product form > description editor AI for WPCOM stores: the prompt was updated so that the generated description is shorter. [https://github.com/woocommerce/woocommerce-ios/pull/9637]
+
+13.4
+-----
+- [*] Payments: Popular and last sold products are displayed on top of the products selection screen when creating or editing an order. [https://github.com/woocommerce/woocommerce-ios/pull/9539]
+
+- [Internal] Payments: Update StripeTerminal pod to 2.19.1 [https://github.com/woocommerce/woocommerce-ios/pull/9537]
+- [**] Adds read-only support for the Gift Cards extension in order details. [https://github.com/woocommerce/woocommerce-ios/pull/9558]
+- [**] Adds read-only support for the Subscriptions extension in order and product details. [https://github.com/woocommerce/woocommerce-ios/pull/9541]
+- [*] Product form > description editor: a magic wand button is added to the keyboard toolbar to auto-generate a product description using Jetpack AI for WPCOM stores. [https://github.com/woocommerce/woocommerce-ios/pull/9577]
+- [Internal] Payments: Upate Tap to Pay connection flow strings to avoid mentioning "reader" [https://github.com/woocommerce/woocommerce-ios/pull/9563]
+- [*] Store onboarding: Now the onboarding task list can be shown/hidden from settings and also from the dashboard. [https://github.com/woocommerce/woocommerce-ios/pull/9572, https://github.com/woocommerce/woocommerce-ios/pull/9573]
+- [**] Adds read-only support for the Min/Max Quantities extension in product details. [https://github.com/woocommerce/woocommerce-ios/pull/9585]
+
+13.3
+-----
+- [***] Payments: UK-based stores merchants can take In-Person Payments. [https://github.com/woocommerce/woocommerce-ios/pull/9496]
+- [*] Store creation free trial flow now includes 3 profiler questions again with updated options: store category, selling status, and store country. [https://github.com/woocommerce/woocommerce-ios/pull/9513]
+- [*] Shipping Labels: Origin address's phone number is now saved locally and pre-populated in the creation form. [https://github.com/woocommerce/woocommerce-ios/pull/9520]
+- [Internal] Almost all mappers have been updated to only decode without the data envelope if it's not available. Please do a smoke test to ensure that all features still work as before. [https://github.com/woocommerce/woocommerce-ios/pull/9510]
+- [Internal] Store onboarding: Mark "Launch your store" task as complete if the store is already public. This is a workaround for a backend issue which marks "Launch your store" task incomplete for already live stores. [https://github.com/woocommerce/woocommerce-ios/pull/9507]
+- [*] Payments: Added Universal Link support for Set up Tap to Pay on iPhone, and to open Universal Links from Just in Time Messages, to more easily navigate to app features. [https://github.com/woocommerce/woocommerce-ios/pull/9518]
+- [*] Login: Potentially fixed the crash on the onboarding screen. [https://github.com/woocommerce/woocommerce-ios/pull/9523]
+
+13.2
+-----
+- [Internal] Store creation: New loading screen added for create store flow. [https://github.com/woocommerce/woocommerce-ios/pull/9383]
+- [*] Payments: Add account type field to receipts [https://github.com/woocommerce/woocommerce-ios/pull/9416]
+- [*] Products can now be filtered within Order creation [https://github.com/woocommerce/woocommerce-ios/pull/9258]
+- [*] Products: Adds read-only support for the Composite Products extension in the Products list, including a list of components in product details. [https://github.com/woocommerce/woocommerce-ios/pull/9455]
+
+
+13.1
+-----
+- [internal] Users can now create a Free Trial store from the app from the Get Started section of the app prologue. [https://github.com/woocommerce/woocommerce-ios/pull/9396]
+- [**] Adds support for Product Multi-selection when creating and/or editing Orders. [https://github.com/woocommerce/woocommerce-ios/issues/8888]
+- [**] Users can now install Jetpack for their non-Jetpack sites after logging in with application passwords. [https://github.com/woocommerce/woocommerce-ios/pull/9354]
+- [*] Payments: We show a Tap to Pay on iPhone feedback survey button in the Payments menu after the first Tap to Pay on iPhone payment is taken [https://github.com/woocommerce/woocommerce-ios/pull/9366]
+- [Internal] Added SiteID to some IPP tracks events [https://github.com/woocommerce/woocommerce-ios/pull/9572,]
+
+13.0
+-----
+- [*] Adds a banner in "Launch store" task screen to upgrade from free trial plan. [https://github.com/woocommerce/woocommerce-ios/pull/9323]
+- [*] Fix: Description, sale price, and image will be copied over to the new product variations when duplicating a variable product. [https://github.com/woocommerce/woocommerce-ios/pull/9322]
+
+
+12.9
+-----
+- [**] Dashboard: an onboarding card is shown for sites with the following tasks if any is incomplete: "tell us more about your store" (store location) that opens a webview, "add your first product" that starts the product creation flow, "launch your store" that publishes the store, "customize your domain" that starts the domain purchase flow, and "get paid" that opens a webview. A subset of the tasks may be shown to self-hosted sites and WPCOM sites on a free trial. [https://github.com/woocommerce/woocommerce-ios/pull/9285]
+- [*] Jetpack benefit banner and modal is now available on the dashboard screen after logging in with site credentials. [https://github.com/woocommerce/woocommerce-ios/pull/9232]
+- [*] Payments: Local search is added to the products selection screen in the order creation flow to speed the process. [https://github.com/woocommerce/woocommerce-ios/pull/9178]
+- [*] Fix: Prevent product variations not loading due to an encoding error for `permalink`, which was altered by a plugin. [https://github.com/woocommerce/woocommerce-ios/pull/9233]
+- [*] Login: Users can now log in to self-hosted sites without Jetpack by approving application password authorization to their sites. [https://github.com/woocommerce/woocommerce-ios/pull/9260]
+- [*] Payments: Tap to Pay on iPhone can now be selected from the Payment Methods screen [https://github.com/woocommerce/woocommerce-ios/pull/9242]
+- [**] Payments: Set up Tap to Pay on iPhone flow added to the Payments Menu. Use it to configure the reader, and try a payment, before collecting a card payment with a customer. [https://github.com/woocommerce/woocommerce-ios/pull/9280]
+
+12.8
+-----
+- [*] Shortcuts: We can now trigger the order creation and payment collection flows from the iOS Shortcuts app. [https://github.com/woocommerce/woocommerce-ios/pull/9103]
+- [Internal] Dashboard: the UI layer had a major refactoring to allow scrolling for content more than stats for the onboarding project. The main design change is on the refresh control, where it was moved from each stats tab to below the navigation bar. Other design changes are not expected. [https://github.com/woocommerce/woocommerce-ios/pull/9031]
+- [**] Products: Adds read-only support for the Product Bundles extension, including a list of bundled products and stock status for product bundles. [https://github.com/woocommerce/woocommerce-ios/pull/9177]
+- [Internal] Mobile Payments: Updated StripeTerminal to 2.18 [https://github.com/woocommerce/woocommerce-ios/pull/9118]
+
+12.7
+-----
+- [Internal] Shipping Label: add condition checks before showing contact options [https://github.com/woocommerce/woocommerce-ios/pull/8982]
+- [*] Main screens are now accessible through the Home Screen Spotlight Search [https://github.com/woocommerce/woocommerce-ios/pull/9082]
+- [*] Stats: Fixed a crash when order stats use a date and time matching the start of Daylight Saving Time. [https://github.com/woocommerce/woocommerce-ios/pull/9083]
+- [*] Fix: Dismiss Take Payment popup after sharing the payment link to another app. [https://github.com/woocommerce/woocommerce-ios/pull/9042]
+- [*] Site credential login: Catch invalid cookie nonce [https://github.com/woocommerce/woocommerce-ios/pull/9102]
+- [*] Better error messages for site credential login failures [https://github.com/woocommerce/woocommerce-ios/pull/9125]
+- [Internal] New Zendesk tag for site credential login errors [https://github.com/woocommerce/woocommerce-ios/pull/9150]
+
+12.6
+-----
+- [*] Fix: When a product's details can be edited, they display a disclosure indicator (chevron). [https://github.com/woocommerce/woocommerce-ios/pull/8980]
+- [*] Payments: fixed a bug where enabled rows in the Payments Menu were sometimes incorrectly shown as disabled [https://github.com/woocommerce/woocommerce-ios/pull/8983]
+- [Internal] Mobile Payments: fixed logic on display of IPP feedback banner on Order List [https://github.com/woocommerce/woocommerce-ios/pull/8994]
+- [**] Support: Merchants can now contact support with a new and refined experience. [https://github.com/woocommerce/woocommerce-ios/pull/9006/files]
+- [***] Mobile Payments: Tap to Pay on iPhone enabled for all US merchants [https://github.com/woocommerce/woocommerce-ios/pull/9023]
+
+12.5
+-----
+- [Internal] Dashboard: the stats implementation had a major update to replace a third-party library in order to support the upcoming store onboarding card. Minimal design changes are expected, and horizontal scrolling between different time range tabs is not available anymore. [https://github.com/woocommerce/woocommerce-ios/pull/8942]
+
+12.4
+-----
+- [**] Menu > Settings: adds a `Domains` row for WPCOM sites to see their site domains, add a new domain, or redeems a domain credit if available. [https://github.com/woocommerce/woocommerce-ios/pull/8870]
+- [Internal] Prologue screen now has only the entry point to site address login flow, and application password authentication is used for sites without Jetpack. [https://github.com/woocommerce/woocommerce-ios/pull/8846]
+- [Internal] A new tag has been added for Zendesk for users authenticated with application password. [https://github.com/woocommerce/woocommerce-ios/pull/8850]
+- [Internal] Failures in the logged-out state are now tracked with anonymous ID. [https://github.com/woocommerce/woocommerce-ios/pull/8861]
+- [*] Fix: Fixed a crash when switching away from the Products tab. [https://github.com/woocommerce/woocommerce-ios/pull/8874]
+
+12.3
+-----
+- [Internal] We have updated the Zendesk SDK to version 6.0 [https://github.com/woocommerce/woocommerce-ios/pull/8828]
+- [Internal] Tap to Pay on iPhone made publicly available via an Experimental Feature toggle [https://github.com/woocommerce/woocommerce-ios/pull/8814]
+
+12.2
+-----
+- [*] Fix: Adding a new attribute will auto-capitalize the first letter for each word in the attribute name. [https://github.com/woocommerce/woocommerce-ios/pull/8772]
+- [internal] Logging: Improvements on logging potential errors when loading Order Details [https://github.com/woocommerce/woocommerce-ios/pull/8781]
+- [Internal] Now we track the specific error code when a networking-related operation fails [https://github.com/woocommerce/woocommerce-ios/issues/8527]
+
+12.1
+-----
+- [*] Adds an In-Person Payments survey banner on top of the Orders view [https://github.com/woocommerce/woocommerce-ios/issues/8530]
+- [*] Fix: Allow product's `purchasable` to be a number as some third-party plugins could alter the type in the API. This could help with the Products tab not loading due to product decoding errors. [https://github.com/woocommerce/woocommerce-ios/pull/8718]
+- [***] [Internal] Start the AB test for allowing login to the app using site credentials [https://github.com/woocommerce/woocommerce-ios/pull/8744]
+
+12.0
+-----
+- [**] Adds a feature of bulk updating products from the product's list. [https://github.com/woocommerce/woocommerce-ios/pull/8704]
+- [internal] Store creation flow now includes 3 profiler questions: store category, selling status, and store country. [https://github.com/woocommerce/woocommerce-ios/pull/8667]
+
+11.9
+-----
+- [**] Now you can generate all possible variations for a product's attributes [https://github.com/woocommerce/woocommerce-ios/pull/8619]
+- [*] Mobile payments: fixed card reader manuals links. [https://github.com/woocommerce/woocommerce-ios/pull/8628]
+
+11.8
+-----
+- [*] Design refresh: Buttons, links, and other calls to action are now purple instead of pink. [https://github.com/woocommerce/woocommerce-ios/pull/8451]
+- [internal] Design: Updated capitalization for various pages, links, and buttons to match new design guidelines. [https://github.com/woocommerce/woocommerce-ios/pull/8455]
+- [internal] Remove A/B testing and release native Jetpack installation flow for all users. [https://github.com/woocommerce/woocommerce-ios/pull/8533]
+
+11.7
+-----
+- [**] Analytics Hub: Now you can select custom date ranges. [https://github.com/woocommerce/woocommerce-ios/pull/8414]
+- [**] Analytics Hub: Now you can see Views and Conversion Rate analytics in the new Sessions card. [https://github.com/woocommerce/woocommerce-ios/pull/8428]
+- [*] My Store: We fixed an issue with Visitors and Conversion stats where sometimes visitors could be counted more than once in the selected period. [https://github.com/woocommerce/woocommerce-ios/pull/8427]
+
+
+11.6
+-----
+- [***] We added a new Analytics Hub inside the My Store area of the app. Simply click on the See More button under the store stats to check more detailed information on Revenue, Orders and Products. [https://github.com/woocommerce/woocommerce-ios/pull/8356]
+- [*] In-Person Payments: fixed timing issues in payments flow, which caused "Remove card" to be shown for too long [https://github.com/woocommerce/woocommerce-ios/pull/8351]
+
+11.5
+-----
+- [*] Account deletion is now supported for all users in settings or in the empty stores screen (in the ellipsis menu). [https://github.com/woocommerce/woocommerce-ios/pull/8179, https://github.com/woocommerce/woocommerce-ios/pull/8272]
+- [*] In-Person Payments: We removed any references to Simple Payments from Orders, and the red badge from the Menu tab and Menu Payments icon announcing the new Payments section. [https://github.com/woocommerce/woocommerce-ios/pull/8183]
+- [internal] Store creation flow was improved with native implementation. It is available from the login prologue (`Get Started` CTA), login email error screen, and store picker (`Add a store` CTA from the empty stores screen or at the bottom of the store list). [Example testing steps in https://github.com/woocommerce/woocommerce-ios/pull/8251]
+- [internal] New stores have two new Products onboarding features: A banner with an `Add a Product` CTA on the My Store screen, and the option to add new products using templates. [https://github.com/woocommerce/woocommerce-ios/pull/8294]
+
+11.4
+-----
+- [*] Add System Status Report to ZenDesk support requests. [https://github.com/woocommerce/woocommerce-ios/pull/8171]
+
+
+11.3
+-----
+- [*] In-Person Payments: Show spinner while preparing reader for payment, instead of saying it's ready before it is. [https://github.com/woocommerce/woocommerce-ios/pull/8115]
+- [internal] In-Person Payments: update StripeTerminal from 2.7 to 2.14 [https://github.com/woocommerce/woocommerce-ios/pull/8132]
+- [*] In-Person Payments: Fixed payment method prompt for WisePad 3 to show only Tap and Insert options [https://github.com/woocommerce/woocommerce-ios/pull/8136]
+
+11.2
+-----
+- [***] You can now preview draft products before publishing. [https://github.com/woocommerce/woocommerce-ios/pull/8102]
+- [*] The survey at the end of the login onboarding flow is no longer available. [https://github.com/woocommerce/woocommerce-ios/pull/8062]
+- [*] Fixed layout issues on the Account Mismatch error screen. [https://github.com/woocommerce/woocommerce-ios/pull/8074]
+- [*] The Accept Payments Easily banner has been removed from the order list [https://github.com/woocommerce/woocommerce-ios/pull/8078]
+
+11.1
+-----
+- [**] You can now search customers when creating or editing an order. [https://github.com/woocommerce/woocommerce-ios/issues/7741]
+- [internal] Store creation is available from the login prologue, login email error screen, and store picker. [https://github.com/woocommerce/woocommerce-ios/pull/8023]
+- [internal] The login flow is simplified with only the option to log in with WordPress.com. This flow is presented in parallel with the existing flow in an A/B test experiment. [https://github.com/woocommerce/woocommerce-ios/pull/7996]
+- [**] Relevant Just In Time Messages will be displayed on the My Store screen [https://github.com/woocommerce/woocommerce-ios/issues/7853]
+
+11.0
+-----
+- [internal] Add support for controlling performance monitoring via Sentry. **Off by default**. [https://github.com/woocommerce/woocommerce-ios/pull/7831]
+
+
+10.9
+-----
+- [***] Dropped iOS 14 support. From now we support iOS 15 and later. [https://github.com/woocommerce/woocommerce-ios/pull/7851]
+- [*] Login: Now you can handle Jetpack site connection for your self-hosted sites from the app. [https://github.com/woocommerce/woocommerce-ios/pull/7847]
+
+
+10.8
+-----
+- [***] Stats: Now you can add a Today's Stats Widget to your lock screen (iOS 16 only) to monitor your sales. [https://github.com/woocommerce/woocommerce-ios/pull/7839]
+- [internal] In-Person Payments: add UTM parameters to card reader purchase URLs to allow attribution [https://github.com/woocommerce/woocommerce-ios/pull/7858]
+- [*] In-Person Payments: the Purchase card reader links now all open in authenticated web views, to make it easier to log in to woocommerce.com. [https://github.com/woocommerce/woocommerce-ios/pull/7862]
+
+10.7
+-----
+- [*] Universal Links: Users can now open universal links in the app. [https://github.com/woocommerce/woocommerce-ios/pull/7632]
+- [internal] Store picker: Show error when the role eligibility check fails while selecting a store. [https://github.com/woocommerce/woocommerce-ios/pull/7816]
+- [internal] Store picker: Add loading state to `Continue` button. [https://github.com/woocommerce/woocommerce-ios/pull/7821]
+- [internal] Store picker: Use Jetpack tunnel API for fetching user info for role checking. [https://github.com/woocommerce/woocommerce-ios/pull/7822]
+- [*] Allow in-app notices to be swiped away [https://github.com/woocommerce/woocommerce-ios/pull/7801]
+
+10.6
+-----
+
+- [**] Products tab: products search now has an option to search products by SKU. Stores with WC version 6.6+ support partial SKU search, otherwise the product(s) with the exact SKU match is returned. [https://github.com/woocommerce/woocommerce-ios/pull/7781]
+- [*] Fixed a rare crash when selecting a store in the store picker. [https://github.com/woocommerce/woocommerce-ios/pull/7765]
+- [*] Settings: Display the WooCommerce version and available updates in Settings [https://github.com/woocommerce/woocommerce-ios/pull/7779]
+- [*] Show suggestion for logging in to a WP.com site with a mismatched WP.com account. [https://github.com/woocommerce/woocommerce-ios/pull/7773]
+- [*] Help center: Added help center web page with FAQs for "Not a WooCommerce site" and "Wrong WordPress.com account" error screens. [https://github.com/woocommerce/woocommerce-ios/pull/7767, https://github.com/woocommerce/woocommerce-ios/pull/7769]
+- [*] Now you can bulk edit variation prices. [https://github.com/woocommerce/woocommerce-ios/pull/7803]
+- [**] Reviews: Now you can reply to product reviews using the Reply button while viewing a product review. [https://github.com/woocommerce/woocommerce-ios/pull/7799]
+
+10.5
+-----
+- [**] Products: Now you can duplicate products from the More menu of the product detail screen. [https://github.com/woocommerce/woocommerce-ios/pull/7727]
+- [**] Login: Added Jetpack connection support from the Account Mismatch error screen. [https://github.com/woocommerce/woocommerce-ios/pull/7748]
+- [*] Orders: We are bringing back the ability to add/edit customer notes and addresses from the main order screen [https://github.com/woocommerce/woocommerce-ios/pull/7750]
+- [*] Help center: Added help center web page with FAQs for "Wrong WordPress.com account error" screen. [https://github.com/woocommerce/woocommerce-ios/pull/7747]
+- [*] Widgets: The Today's Stat Widget adds support for bigger fonts. [https://github.com/woocommerce/woocommerce-ios/pull/7752]
+
+10.4
+-----
+- [***] Stats: Now you can add a Today's Stats Widget to your homescreen to monitor your sales. [https://github.com/woocommerce/woocommerce-ios/pull/7732]
+- [*] Help center: Added help center web page with FAQs for "Pick a WooCommerce Store", "Enter WordPress.com password" and "Open mail to find magic link" screens. [https://github.com/woocommerce/woocommerce-ios/pull/7641, https://github.com/woocommerce/woocommerce-ios/pull/7730, https://github.com/woocommerce/woocommerce-ios/pull/7737]
+- [*] In-Person Payments: Fixed a bug where cancelling a card reader connection would temporarily prevent further connections [https://github.com/woocommerce/woocommerce-ios/pull/7689]
+- [*] In-Person Payments: Improvements to the card reader connection flow UI [https://github.com/woocommerce/woocommerce-ios/pull/7687]
+- [*] Login: Users can now set up the Jetpack connection between a self-hosted site and their WP.com account. [https://github.com/woocommerce/woocommerce-ios/pull/7608]
+- [*] Product list: the "Draft" blue color is fixed to be more readable for a draft product row in the product list. [https://github.com/woocommerce/woocommerce-ios/pull/7724]
+- [*] Notifications: App icon badge is now cleared correctly after visiting the orders tab. [https://github.com/woocommerce/woocommerce-ios/pull/7735]
+
+10.3
+-----
+- [*] Dashboard: the last selected time range tab (Today/This Week/This Month/This Year) is persisted for the site and shown on the next site launch (app launch or switching stores). [https://github.com/woocommerce/woocommerce-ios/pull/7638]
+- [*] Dashboard: swiping to another time range tab now triggers syncing for the target tab. Previously, the stats on the target tab aren't synced from the swipe gesture. [https://github.com/woocommerce/woocommerce-ios/pull/7650]
+- [*] In-Person Payments: Fixed an issue where the Pay in Person toggle could be out of sync with the setting on the website. [https://github.com/woocommerce/woocommerce-ios/pull/7656]
+- [*] In-Person Payments: Removed the need to sign in when purchasing a card reader [https://github.com/woocommerce/woocommerce-ios/pull/7670]
+- [*] In-Person Payments: Fixed a bug where canceling a reader connection could result in being unable to connect a reader in future [https://github.com/woocommerce/woocommerce-ios/pull/7678]
+- [*] In-Person Payments: Fixed a bug which prevented the Collect Payment button from being shown for Cash on Delivery orders  [https://github.com/woocommerce/woocommerce-ios/pull/7694]
+
+10.2
+-----
+- [*] Help center: Added help center web page with FAQs for "Enter Store Credentials", "Enter WordPress.com email " and "Jetpack required Error" screens. [https://github.com/woocommerce/woocommerce-ios/pull/7588, https://github.com/woocommerce/woocommerce-ios/pull/7590, https://github.com/woocommerce/woocommerce-ios/pull/7621]
+- [*] In-Person Payments: Fixed the Learn More link from the `Enable Pay in Person` onboarding screen for WCPay [https://github.com/woocommerce/woocommerce-ios/pull/7598]
+- [**] In-Person Payments: Added a switch for the Pay in Person payment method on the Payments menu. This allows you to accept In-Person Payments for website orders [https://github.com/woocommerce/woocommerce-ios/pull/7613]
+
+10.1
+-----
+- [*] In-Person Payments: The onboarding notice on the In-Person Payments menu is correctly dismissed after multiple prompts are shown. [https://github.com/woocommerce/woocommerce-ios/pull/7543]
+- [*] Help center: Added custom help center web page with FAQs for "Enter Store Address" and "Enter WordPress.com email" screens. [https://github.com/woocommerce/woocommerce-ios/pull/7553, https://github.com/woocommerce/woocommerce-ios/pull/7573]
+- [*] In-Person Payments: The plugin selection is saved correctly after multiple onboarding prompts. [https://github.com/woocommerce/woocommerce-ios/pull/7544]
+- [**] In-Person Payments: A new prompt to enable `Pay in Person` for your store's checkout, to accept In-Person Payments for website orders [https://github.com/woocommerce/woocommerce-ios/issues/7474]
+
+10.0
+-----
+- [**] In-Person Payments and Simple Payments have been moved to a new Payments section [https://github.com/woocommerce/woocommerce-ios/pull/7473]
+- [*] Login: on the WP.com password screen, the magic link login option is moved from below "Reset your password" to below the primary Continue button for higher visibility. [https://github.com/woocommerce/woocommerce-ios/pull/7469]
+- [*] Login: some minor enhancements are made to the error screen after entering an invalid WP.com email - a new "What is WordPress.com?" link, hiding the "Log in with store address" button when it's from the store address login flow, and some copy changes. [https://github.com/woocommerce/woocommerce-ios/pull/7485]
+- [**] In-Person Payments: Accounts with pending requirements are no longer blocked from taking payments - we have added a skip button to the relevant screen. [https://github.com/woocommerce/woocommerce-ios/pull/7504]
+- [*] Login: New button added to the empty site picker screen to enter a site address for troubleshooting. [https://github.com/woocommerce/woocommerce-ios/pull/7484]
+
+9.9
+-----
+- [*] [Sign in with store credentials]: New screen added with instructions to verify Jetpack connected email. [https://github.com/woocommerce/woocommerce-ios/pull/7424]
+- [*] [Sign in with store credentials]: Stop clearing username/password after an invalid attempt to enable users to fix typos. [https://github.com/woocommerce/woocommerce-ios/pull/7444]
+- [*] Login: after entering WP.com email, a magic link is automatically sent when it is enabled (magic links are disabled for A8C emails and WP.com accounts with recently changed password) and a new screen is shown with an option to log in with password. [https://github.com/woocommerce/woocommerce-ios/pull/7449]
+
+9.8
+-----
+- [***] Login: Introduce a way to sign in using store credentials.  [https://github.com/woocommerce/woocommerce-ios/pull/7320]
+- [**] Login: You can now install WooCommerce to your self-hosted sites from the login flow. [https://github.com/woocommerce/woocommerce-ios/pull/7401]
+- [**] Orders: Now you can quickly mark an order as completed by swiping it to the left! [https://github.com/woocommerce/woocommerce-ios/pull/7385]
+- [*] In-Person Payments: The purchase card reader information card appears also in the Orders list screen. [https://github.com/woocommerce/woocommerce-ios/pull/7326]
+- [*] Login: in release 9.7, when the app is in logged out state, an onboarding screen is shown before the prologue screen if the user hasn't finished or skipped it. In release 9.8, a survey is added to the end of the onboarding screen. [https://github.com/woocommerce/woocommerce-ios/pull/7416]
+- [*] Login: a local notification is scheduled after the user encounters an error from logging in with an invalid site address or WP.com email/password. Please see testing scenarios in the PR, with regression testing on order/review remote notifications. [https://github.com/woocommerce/woocommerce-ios/pull/7323, https://github.com/woocommerce/woocommerce-ios/pull/7372, https://github.com/woocommerce/woocommerce-ios/pull/7422]
+
+9.7
+-----
+- [***] Orders: Orders can now be edited within the app. [https://github.com/woocommerce/woocommerce-ios/pull/7300]
+- [**] Orders: You can now view the Custom Fields for an order in the Order Details screen. [https://github.com/woocommerce/woocommerce-ios/pull/7310]
+- [*] In-Person Payments: Card Reader Manuals now appear based on country availability, consolidated into an unique view [https://github.com/woocommerce/woocommerce-ios/pull/7178]
+- [*] Login: Jetpack setup flow is now accessible from the Login with Store Address flow. [https://github.com/woocommerce/woocommerce-ios/pull/7294]
+- [*] In-Person Payments: The purchase card reader information card can be dismissed [https://github.com/woocommerce/woocommerce-ios/pull/7260]
+- [*] In-Person Payments: When dismissing the purchase card reader information card, the user can choose to be reminded in 14 days. [https://github.com/woocommerce/woocommerce-ios/pull/7271]
+- [*] In-Person Payments: The purchase card reader information card appears also in the App Settings screen. [https://github.com/woocommerce/woocommerce-ios/pull/7308]
+- [*] Refund lines in the Order details screen now appear ordered from oldest to newest [https://github.com/woocommerce/woocommerce-ios/pull/7287]
+- [*] Login: when the app is in logged out state, an onboarding screen is shown before the prologue screen if the user hasn't finished or skipped it.  [https://github.com/woocommerce/woocommerce-ios/pull/7324]
+- [*] Orders: When a store has no orders yet, there is an updated message with a link to learn more on the Orders tab. [https://github.com/woocommerce/woocommerce-ios/pull/7328]
+
+9.6
+-----
+- [***] Coupons: Coupons can now be created from within the app. [https://github.com/woocommerce/woocommerce-ios/pull/7239]
+- [**] Order Details: All unpaid orders have a Collect Payment button, which shows a payment method selection screen. Choices are Cash, Card, and Payment Link. [https://github.com/woocommerce/woocommerce-ios/pull/7111]
+- [**] In-Person Payments: Support for selecting preferred payment gateway when multiple extensions are installed on the store. [https://github.com/woocommerce/woocommerce-ios/pull/7153]
+- [*] Coupons: Removed the redundant animation when reloading the coupon list. [https://github.com/woocommerce/woocommerce-ios/pull/7137]
+- [*] Login: Display "What is WordPress.com?" link in "Continue With WordPress.com" flow. [https://github.com/woocommerce/woocommerce-ios/pull/7213]
+- [*] Login: Display the Jetpack requirement error after login is successful.
+- [*] Login: Display a "New to WooCommerce?" link in the login prologue screen above the login buttons. [https://github.com/woocommerce/woocommerce-ios/pull/7261]
+- [*] In-Person Payments: Publicize the Card Present Payments feature on the Payment Method screen [https://github.com/woocommerce/woocommerce-ios/pull/7225]
+- [*] In-Person Payments: Add blog_id to IPP transaction description to match WCPay [https://github.com/woocommerce/woocommerce-ios/pull/7221]
+- [*] Product form: after uploading an image, the product can now be saved immediately while the image is being uploaded in the background. When no images are pending upload for the saved product, the images are added to the product. Testing instructions: https://github.com/woocommerce/woocommerce-ios/pull/7196. [https://github.com/woocommerce/woocommerce-ios/pull/7254]
+
+9.5
+-----
+- [*] Coupons: Fixed issue saving "Individual Use" and "Exclude Sale Items" fields. [https://github.com/woocommerce/woocommerce-ios/pull/7117]
+- [*] Orders: The customer shipping/billing address form now navigates back automatically after selecting a country or state. [https://github.com/woocommerce/woocommerce-ios/pull/7119]
+- [internal] In settings and empty stores screen, the "Close Account" link is shown for users who signed in with Apple (the only way to create an account) to close their WordPress.com account. [https://github.com/woocommerce/woocommerce-ios/pull/7143]
+
+9.4
+-----
+- [*] Orders: Order details now displays both the date and time for all orders. [https://github.com/woocommerce/woocommerce-ios/pull/6996]
+- [*] Simple payments have the `Card` option available for stores with configuration issues to resolve, and show onboarding to help resolve them [https://github.com/woocommerce/woocommerce-ios/pull/7002]
+- [*] Order & Product list: Now, we can pull to refresh from an empty view. [https://github.com/woocommerce/woocommerce-ios/pull/7023, https://github.com/woocommerce/woocommerce-ios/pull/7030]
+- [*] Order Creation: Fixes a bug where selecting a variable product to add to a new order would sometimes open the wrong list of product variations. [https://github.com/woocommerce/woocommerce-ios/pull/7042]
+- [*] Collect payment button on Order Details no longer flickers when the screen loads [https://github.com/woocommerce/woocommerce-ios/pull/7043]
+- [*] Issue refund button on Order Details is shown for all paid orders [https://github.com/woocommerce/woocommerce-ios/pull/7046]
+- [*] Order Creation: Fixes several bugs with the Products section not showing the correct order items or not correctly updating the item quantity. [https://github.com/woocommerce/woocommerce-ios/pull/7067]
+
+9.3
+-----
+- [***] In-Person Payments is now available for merchants using WooCommerce Payments in Canada. [https://github.com/woocommerce/woocommerce-ios/pull/6954]
+- [*] In-Person Payments: Accessibility improvement [https://github.com/woocommerce/woocommerce-ios/pull/6869, https://github.com/woocommerce/woocommerce-ios/pull/6886, https://github.com/woocommerce/woocommerce-ios/pull/6906]
+- [*] Orders: Now it's possible to select and copy text from the notes on an order. [https://github.com/woocommerce/woocommerce-ios/pull/6894]
+- [*] Support Arabic numerals on amount fields. [https://github.com/woocommerce/woocommerce-ios/pull/6891]
+- [*] Product Selector: Enabled selecting all variations on variable product rows. [https://github.com/woocommerce/woocommerce-ios/pull/6899]
+- [internal] Order Creation: Adding new products, shipping, fee, or customer details to an order now blocks the UI immediately while the order is syncing remotely. [https://github.com/woocommerce/woocommerce-ios/pull/6974]
+
+- [*] Coupons: Now it's possible to update discount types for coupons. [https://github.com/woocommerce/woocommerce-ios/pull/6935]
+- [*] Orders tab: the view width now adjusts to the app in tablet split view on iOS 15. [https://github.com/woocommerce/woocommerce-ios/pull/6951]
+
+9.2
+-----
+- [***] Experimental Features: Coupons editing and deletion features are now enabled as part of coupon management. [https://github.com/woocommerce/woocommerce-ios/pull/6853]
+- [*] Order Creation: Updated percentage fee flow - added amount preview, disabled percentage option when editing. [https://github.com/woocommerce/woocommerce-ios/pull/6763]
+- [*] Product Details: Update status badge layout and show it for more cases. [https://github.com/woocommerce/woocommerce-ios/pull/6768]
+- [*] Coupons: now, the percentage amount of coupons will be displayed correctly in the listing and in coupon detail if the amount contains fraction digits. [https://github.com/woocommerce/woocommerce-ios/pull/6804]
+- [*] Coupons: Filter initial search results to show only coupons of the currently selected store. [https://github.com/woocommerce/woocommerce-ios/pull/6800]
+- [*] Coupons: Fixed crash when there are duplicated items on the coupon list. [https://github.com/woocommerce/woocommerce-ios/pull/6798]
+- [*] In-Person Payments: Run onboarding checks when connecting a reader. [https://github.com/woocommerce/woocommerce-ios/pull/6761, https://github.com/woocommerce/woocommerce-ios/pull/6774, https://github.com/woocommerce/woocommerce-ios/pull/6789]
+- [*] In-Person Payments: after collecting payment for an order, merchants can now email the receipt in addition to printing it in Order Details > See Receipt if email is available on the device. [https://github.com/woocommerce/woocommerce-ios/pull/6833]
+
+9.1
+-----
+
+- [*] Product name field in product form - Remove scroll behaviour and increase field height to fully display long product names. [https://github.com/woocommerce/woocommerce-ios/pull/6681]
+- [*] Filter toolbar in Products list tab - Filter toolbar is pinned outside of the products list. [https://github.com/woocommerce/woocommerce-ios/pull/6698]
+- [internal] Loading screens are refactored to avoid duplicated code and a potential crash. Please quickly smoke test them to make sure that everything still works as before. [https://github.com/woocommerce/woocommerce-ios/pull/6717]
+- [*] Shipping settings - Weight and shipping package dimensions are localized based on device locale. Also, decimal point information is no longer lost upon saving a product, when using comma as a decimal separator. [https://github.com/woocommerce/woocommerce-ios/pull/6721]
+
+9.0
+-----
+
+- [*] Share payment links from the order details screen. [https://github.com/woocommerce/woocommerce-ios/pull/6609]
+- [internal] Reviews lists on Products and Menu tabs are refactored to avoid duplicated code. Please quickly smoke test them to make sure that everything still works as before. [https://github.com/woocommerce/woocommerce-ios/pull/6553]
+- [**] Now it's possible to change the order of the product images. [https://github.com/woocommerce/woocommerce-ios/pull/6620]
+- [*] Improved accessibility for the error banner and info banner displayed in Orders and Products. [https://github.com/woocommerce/woocommerce-ios/pull/6633]
+
+8.9
+-----
+- [*] Coupons: Fixed issue loading the coupon list from the local storage on initial load. [https://github.com/woocommerce/woocommerce-ios/pull/6463]
+- [*] Coupons: Update layout of the coupon details screen. [https://github.com/woocommerce/woocommerce-ios/pull/6522]
+- [*] In-Person Payments: Removed collecting L2/L3 data. [https://github.com/woocommerce/woocommerce-ios/pull/6519]
+- [*] Hub Menu: Multiple menu items can no longer be tapped simultaneously. [https://github.com/woocommerce/woocommerce-ios/pull/6484]
+- [*] Jetpack CP: Fixed crash when attempting to access WP-Admin with an invalid URL that has an unsupported scheme. [https://github.com/woocommerce/woocommerce-ios/pull/6502]
+- [***] Orders: Order Creation is now available to everyone! You can go to the Orders tab and tap the + button to create a new order. [https://github.com/woocommerce/woocommerce-ios/pull/6537]
+- [internal] Loading screens are refactored to avoid duplicated code and a potential crash. Please quickly smoke test them to make sure that everything still works as before. [https://github.com/woocommerce/woocommerce-ios/pull/6535] [https://github.com/woocommerce/woocommerce-ios/pull/6544]
+
+8.8
+-----
+- [*] Updates the app's About screen to be consistent with Automattic's other mobile apps. [https://github.com/woocommerce/woocommerce-ios/pull/6421]
+- [***] Experimental Feature: It's now possible to add custom shipping method and fees in order creation flow. Tax amount and Order total is now synced from backend. [https://github.com/woocommerce/woocommerce-ios/pull/6429]
+- [**] Now it's possible to filter orders by custom statuses. [https://github.com/woocommerce/woocommerce-ios/pull/6390]
+- [*] Fixed issue presenting Edit Customer Note screen as a modal on large screens. [https://github.com/woocommerce/woocommerce-ios/pull/6406]
+- [*] Products displayed in Order Detail now follow the same order of the web. [https://github.com/woocommerce/woocommerce-ios/pull/6401]
+- [*] Simple Payments now shows a detailed tax break up before taking the payment. [https://github.com/woocommerce/woocommerce-ios/pull/6412]
+- [*] Coupons list now shows an error view if coupons are disabled for the store. Coupons can be enabled again from this view. [https://github.com/woocommerce/woocommerce-ios/pull/6446]
+- [*] Coupon details screen now displays more informative error messages when loading the total discount amount fails. [https://github.com/woocommerce/woocommerce-ios/pull/6457]
+- [internal] Shipping Labels: the navigation bar in the web view for adding payments is now correctly hidden. [https://github.com/woocommerce/woocommerce-ios/pull/6435]
+
+8.7
+-----
+- [**] In-Person Payments: Added card details to refund confirmation screen to help with refunding to the payment card [https://github.com/woocommerce/woocommerce-ios/pull/6241]
+- [*] Coupons: Replace the toggles on Usage Details screen with text for uneditable contents. [https://github.com/woocommerce/woocommerce-ios/pull/6287]
+- [*] Improve image loading for thumbnails especially on the Product list. [https://github.com/woocommerce/woocommerce-ios/pull/6299]
+- [*] Coupons: Added feedback banner on the top of the coupon list. [https://github.com/woocommerce/woocommerce-ios/pull/6316]
+- [*] Coupons: Handled error when loading total discounted amount fails. [https://github.com/woocommerce/woocommerce-ios/pull/6368]
+- [internal] Removed all feature flags for Shipping Labels. Please smoke test all parts of Shipping Labels to make sure that everything still works as before. [https://github.com/woocommerce/woocommerce-ios/pull/6270]
+- [*] In-Person Payments: Localized messages and UI [https://github.com/woocommerce/woocommerce-ios/pull/6317]
+- [*] My Store: Fixed incorrect currency symbol of revenue text for stores with non-USD currency. [https://github.com/woocommerce/woocommerce-ios/pull/6335]
+- [*] Notifications: Dismiss presented view before presenting content from notifications [https://github.com/woocommerce/woocommerce-ios/pull/6354]
+- [*] Reviews: Fixed missing product information on first load [https://github.com/woocommerce/woocommerce-ios/pull/6367]
+- [internal] Removed the feature flag for My store tab UI updates. Please smoke test the store stats and top performers in the "My store" tab to make sure everything works as before. [https://github.com/woocommerce/woocommerce-ios/pull/6334]
+- [*] In-Person Payments: Add support for accepting payments on bookable products [https://github.com/woocommerce/woocommerce-ios/pull/6364]
+- [*] In-Person Payments: Fixed issue where payment could be stuck prompting to remove the card if the payment was declined and retried before removing the card.
+
+8.6
+-----
+- [***] Merchants can now view coupons in their stores by enabling Coupon Management in Experimental Features. [https://github.com/woocommerce/woocommerce-ios/pull/6209]
+- [*] Orders: In the experimental Order Creation feature, product variations added to a new order now show a list of their attributes. [https://github.com/woocommerce/woocommerce-ios/pull/6131]
+- [*] Enlarged the tap area for the action button on the notice view. [https://github.com/woocommerce/woocommerce-ios/pull/6146]
+- [*] Reviews: Fixed crash on iPad when tapping the More button. [https://github.com/woocommerce/woocommerce-ios/pull/6187]
+- [*] In-Person Payments: Remove Stripe from Experimental Features as it is always enabled now. [https://github.com/woocommerce/woocommerce-ios/pull/6205]
+- [*] Disabled unnecessary selection of the "Refund via" row on the Refund Confirmation screen [https://github.com/woocommerce/woocommerce-ios/pull/6198]
+- [*] Increased minimum version of Stripe extension for In-Person Payments to 6.2.0 [https://github.com/woocommerce/woocommerce-ios/pull/xxxx]
+- [internal] Removed `pushNotificationsForAllStores` feature flag. Since the changes are non-trivial, it would be great to smoke test push notifications for all stores in beta testing. [https://github.com/woocommerce/woocommerce-ios/pull/6231]
+
+8.5
+-----
+- [*] In-Person Payments: Inform the user when a card reader battery is so low that it needs to be charged before the reader can be connected. [https://github.com/woocommerce/woocommerce-ios/pull/5998]
+- [***] The My store tab is having a new look with new conversion stats and shows up to 5 top performing products now (used to be 3). [https://github.com/woocommerce/woocommerce-ios/pull/5991]
+- [**] Fixed a crash at the startup of the app, related to Gridicons. [https://github.com/woocommerce/woocommerce-ios/pull/6005]
+- [***] Experimental Feature: It's now possible to create Orders in the app by enabling it in Settings > Experimental Features. For now you can change the order status, add products, and add customer details (billing and shipping addresses). [https://github.com/woocommerce/woocommerce-ios/pull/6060]
+- [*] Fixed issue in date range selection for the orders filters where is some cases dates are not available for selection. [https://github.com/woocommerce/woocommerce-ios/pull/6090]
+- [*] Enabled "view product in store" and "share product" options for variable products when accessing them through the order details screen. [https://github.com/woocommerce/woocommerce-ios/pull/6091]
+
+8.4
+-----
+- [***] In-Person Payments: Support for Stripe M2 card reader. [https://github.com/woocommerce/woocommerce-ios/pull/5844]
+- [***] We introduced a new tab called "Menu", a tab in the main navigation where you can browser different sub-sections of the app: Switch Store, Settings, WooCommerce Admin, View Store and Reviews. [https://github.com/woocommerce/woocommerce-ios/pull/5926]
+- [***] Store admins can now access sites with plugins that have Jetpack Connection Package (e.g. WooCommerce Payments, Jetpack Backup) in the app. These sites do not require Jetpack-the-plugin to connect anymore. Store admins can still install Jetpack-the-plugin from the app through settings or a Jetpack banner. [https://github.com/woocommerce/woocommerce-ios/pull/5924]
+- [*] Add/Edit Product screen: Fix transient product name while adding images.[https://github.com/woocommerce/woocommerce-ios/pull/5840]
+
+8.3
+-----
+- [***] All merchants can create Simple Payments orders. [https://github.com/woocommerce/woocommerce-ios/pull/5684]
+- [**] System status report can now be viewed and copied directly from within the app. [https://github.com/woocommerce/woocommerce-ios/pull/5702]
+- [**] Product SKU input scanner is now available as a beta feature. To try it, enable it from settings and you can scan a barcode to use as the product SKU in product inventory settings! [https://github.com/woocommerce/woocommerce-ios/pull/5695]
+- [**] Now you chan share a payment link when creating a Simple Payments order [https://github.com/woocommerce/woocommerce-ios/pull/5819]
+- [*] Reviews: "Mark all as read" checkmark bar button item button replaced with menu button which launches an action sheet. Menu button is displayed only if there are unread reviews available.[https://github.com/woocommerce/woocommerce-ios/pull/5833]
+- [internal] Refactored ReviewsViewController to add tests. [https://github.com/woocommerce/woocommerce-ios/pull/5834]
+
+8.2
+-----
+- [***] In-Person Payments: Now you can collect Simple Payments on the go. [https://github.com/woocommerce/woocommerce-ios/pull/5635]
+- [*] Products: After generating a new variation for a variable product, you are now taken directly to edit the new variation. [https://github.com/woocommerce/woocommerce-ios/pull/5649]
+- [*] Dashboard: the visitor count in the Today tab is now shown when Jetpack site stats are enabled.
+- [*] Add/Edit Product Images: tapping on the last `n` images while `n` images are pending upload does not crash the app anymore. [https://github.com/woocommerce/woocommerce-ios/pull/5672]
+
+8.2
+-----
+- [*] Shipping Labels: Fixes a crash when saving a new shipping label after opening the order from a push notification. [https://github.com/woocommerce/woocommerce-ios/pull/5549]
+- [**] In-Person Payments: Improved support for VoiceOver. [https://github.com/woocommerce/woocommerce-ios/pull/5572]
+- [*] In-Person Payments: Fixes a crash when printing more than one receipt. [https://github.com/woocommerce/woocommerce-ios/pull/5575]
+
+8.1
+-----
+- [***] Now it's possible to filter Order List by multiple statuses and date ranges. Plus, we removed the top tab bar on Orders Tab. [https://github.com/woocommerce/woocommerce-ios/pull/5491]
+- [*] Login: Password AutoFill will suggest wordpress.com accounts. [https://github.com/woocommerce/woocommerce-ios/pull/5399]
+- [*] Store picker: after logging in with store address, the pre-selected store is now the currently selected store instead of the store from login flow. [https://github.com/woocommerce/woocommerce-ios/pull/5508]
+- [*] The application icon number from order push notifications is now cleared after visiting the orders tab. [https://github.com/woocommerce/woocommerce-ios/pull/5715]
+- [internal] Migrated Settings screen to MVVM [https://github.com/woocommerce/woocommerce-ios/pull/5393]
+
+
+8.0
+-----
+- [*] Product List: Add support for product filtering by category. [https://github.com/woocommerce/woocommerce-ios/pull/5388]
+- [***] Push notifications are now supported for all connected stores. [https://github.com/woocommerce/woocommerce-ios/pull/5299]
+- [*] Fix: in Settings > Switch Store, tapping "Dismiss" after selecting a different store does not switch stores anymore. [https://github.com/woocommerce/woocommerce-ios/pull/5359]
+
+7.9
+-----
+- [*] Fix: after disconnecting a site or connecting to a new site, the sites in site picker (Settings > Switch Store) should be updated accordingly. The only exception is when the newly disconnected site is the currently selected site. [https://github.com/woocommerce/woocommerce-ios/pull/5241]
+- [*] Order Details: Show a button on the "Product" section of Order Details screen to allow recreating shipping labels. [https://github.com/woocommerce/woocommerce-ios/pull/5255]
+- [*] Edit Order Address - Enable `Done` button when `Use as {Shipping/Billing} Address` toggle is turned on. [https://github.com/woocommerce/woocommerce-ios/pull/5254]
+- [*] Add/Edit Product: fix an issue where the product name keyboard is English only. [https://github.com/woocommerce/woocommerce-ios/pull/5288]
+- [*] Order Details: some sites cannot parse order requests where the fields parameter has spaces, and the products section cannot load as a result. The spaces are now removed. [https://github.com/woocommerce/woocommerce-ios/pull/5298]
+
+7.8
+-----
+- [***] Shipping Labels: merchants can create multiple packages for the same order, moving the items between different packages. [https://github.com/woocommerce/woocommerce-ios/pull/5190]
+- [*] Fix: Navigation bar buttons are now consistently pink on iOS 15. [https://github.com/woocommerce/woocommerce-ios/pull/5139]
+- [*] Fix incorrect info banner color and signature option spacing on Carrier and Rates screen. [https://github.com/woocommerce/woocommerce-ios/pull/5144]
+- [x] Fix an error where merchants were unable to connect to valid stores when they have other stores with corrupted information https://github.com/woocommerce/woocommerce-ios/pull/5161
+- [*] Shipping Labels: Fix issue with decimal values on customs form when setting the device with locales that use comma as decimal point. [https://github.com/woocommerce/woocommerce-ios/pull/5195]
+- [*] Shipping Labels: Fix crash when tapping on Learn more rows of customs form. [https://github.com/woocommerce/woocommerce-ios/pull/5207]
+- [*] Shipping Labels: The shipping address now prefills the phone number from the billing address if a shipping phone number is not available. [https://github.com/woocommerce/woocommerce-ios/pull/5177]
+- [*] Shipping Labels: now in Carrier and Rates we always display the discounted rate instead of the retail rate if available. [https://github.com/woocommerce/woocommerce-ios/pull/5188]
+- [*] Shipping Labels: If the shipping address is invalid, there are now options to email, call, or message the customer. [https://github.com/woocommerce/woocommerce-ios/pull/5228]
+- [*] Accessibility: notify when offline mode banner appears or disappears. [https://github.com/woocommerce/woocommerce-ios/pull/5225]
+
+7.7
+-----
+- [***] In-Person Payments: US merchants can now obtain a card reader and then collect payments directly from the app. [https://github.com/woocommerce/woocommerce-ios/pull/5030]
+- [***] Shipping Labels: Merchants can now add new payment methods for shipping labels directly from the app. [https://github.com/woocommerce/woocommerce-ios/pull/5023]
+- [**] Merchants can now edit shipping & billing addresses from orders. [https://github.com/woocommerce/woocommerce-ios/pull/5097]
+- [x] Fix: now a default paper size will be selected in Shipping Label print screen. [https://github.com/woocommerce/woocommerce-ios/pull/5035]
+- [*] Show banner on screens that use cached data when device is offline. [https://github.com/woocommerce/woocommerce-ios/pull/5000]
+- [*] Fix incorrect subtitle on customs row of Shipping Label purchase flow. [https://github.com/woocommerce/woocommerce-ios/pull/5093]
+- [*] Make sure customs form printing option is not available on non-international orders. [https://github.com/woocommerce/woocommerce-ios/pull/5104]
+- [*] Fix incorrect logo for DHL in Shipping Labels flow. [https://github.com/woocommerce/woocommerce-ios/pull/5105]
+
+7.6
+-----
+- [x] Show an improved error modal if there are problems while selecting a store. [https://github.com/woocommerce/woocommerce-ios/pull/5006]
+- [***] Shipping Labels: Merchants can now add new custom and service packages for shipping labels directly from the app. [https://github.com/woocommerce/woocommerce-ios/pull/4976]
+- [*] Fix: when product image upload fails, the image cell stop loading. [https://github.com/woocommerce/woocommerce-ios/pull/4989]
+
+7.5
+-----
+- [***] Merchants can now purchase shipping labels and declare customs forms for international orders. [https://github.com/woocommerce/woocommerce-ios/pull/4896]
+- [**] Merchants can now edit customer provided notes from orders. [https://github.com/woocommerce/woocommerce-ios/pull/4893]
+- [*] Fix empty states sometimes not centered vertically [https://github.com/woocommerce/woocommerce-ios/pull/4890]
+- [*] Fix error syncing products due to decoding failure of regular_price in product variations. [https://github.com/woocommerce/woocommerce-ios/pull/4901]
+- [*] Hide bottom bar on shipping label purchase form. [https://github.com/woocommerce/woocommerce-ios/pull/4902]
+
+7.4
+-----
+- [*] Fix an issue where some extension was not shown in order item details. [https://github.com/woocommerce/woocommerce-ios/pull/4753]
+- [*] Fix: The refund button within Order Details will be hidden if the refund is zero. [https://github.com/woocommerce/woocommerce-ios/pull/4789]
+- [*] Fix: Incorrect arrow direction for right-to-left languages on Shipping Label flow. [https://github.com/woocommerce/woocommerce-ios/pull/4796]
+- [*] Fix: Shouldn't be able to schedule a sale without sale price. [https://github.com/woocommerce/woocommerce-ios/pull/4825]
+- [*] Fix: Edit address screen is pushed twice in Shipping Label flow when missing name in origin or destination address. [https://github.com/woocommerce/woocommerce-ios/pull/4845]
+
+7.3
+-----
+- [*] Order Detail: now we do not offer the "email note to customer" option if no email is available. [https://github.com/woocommerce/woocommerce-ios/pull/4680]
+- [*] My Store: If there are errors loading the My Store screen, a banner now appears at the top of the screen with links to troubleshoot or contact support. [https://github.com/woocommerce/woocommerce-ios/pull/4704]
+- [*] Fix: Added 'Product saved' confirmation message when a product is updated [https://github.com/woocommerce/woocommerce-ios/pull/4709]
+- [*] Shipping Labels: Updated address validation to automatically use trivially normalized address for origin and destination. [https://github.com/woocommerce/woocommerce-ios/pull/4719]
+- [*] Fix: Order details for products with negative prices now will show correctly [https://github.com/woocommerce/woocommerce-ios/pull/4683]
+- [*] Fix: Order list not extend edge-to-edge in dark mode. [https://github.com/woocommerce/woocommerce-ios/pull/4728]
+- [*] Plugins: Added list of active and inactive plugins that can be reached by admins in the settings screen. [https://github.com/woocommerce/woocommerce-ios/pull/4735]
+- [*] Login: Updated appearance of back buttons in navigation bar to minimal style. [https://github.com/woocommerce/woocommerce-ios/pull/4726]
+- [internal] Upgraded Zendesk SDK to version 5.3.0. [https://github.com/woocommerce/woocommerce-ios/pull/4699]
+- [internal] Updated GoogleSignIn to version 6.0.1 through WordPressAuthenticator. There should be no functional changes, but may impact Google sign in flow. [https://github.com/woocommerce/woocommerce-ios/pull/4725]
+
+7.2
+-----
+- [*] Order Fulfillment: Updated success notice message [https://github.com/woocommerce/woocommerce-ios/pull/4589]
+- [*] Order Fulfillment: Fixed issue footer view getting clipped of by iPhone notch [https://github.com/woocommerce/woocommerce-ios/pull/4631]
+- [*] Shipping Labels: Updated address validation to make sure a name is entered for each address. [https://github.com/woocommerce/woocommerce-ios/pull/4601]
+- [*] Shipping Labels: Hide Contact button on Shipping To Address form when customer phone number is not provided. [https://github.com/woocommerce/woocommerce-ios/pull/4663]
+- [*] Shipping Labels: Updated edge-to-edge table views for all forms. [https://github.com/woocommerce/woocommerce-ios/pull/4657]
+- [*] Orders and Order Details: Updated edge-to-edge table views for consistent look across the app. [https://github.com/woocommerce/woocommerce-ios/pull/4638]
+- [*] Reviews and Review Details: Updated edge-to-edge table views for consistent look across the app. [https://github.com/woocommerce/woocommerce-ios/pull/4637]
+- [*] New error screen displayed to users without the required roles to access the store. [https://github.com/woocommerce/woocommerce-ios/pull/4493]
+
+7.1
+-----
+- [***] Merchants from US can create shipping labels for physical orders from the app. The feature supports for now only orders where the shipping address is in the US. [https://github.com/woocommerce/woocommerce-ios/pull/4578]
+- [**] Due to popular demand, the Order fulfill is displayed once again when clicking on the Mark order complete button. [https://github.com/woocommerce/woocommerce-ios/pull/4567]
+- [*] Fix: Interactive pop gesture on Order Details and Settings screen. [https://github.com/woocommerce/woocommerce-ios/pull/4504]
+- [*] Fix: Frozen refresh control and placeholder when switching tabs [https://github.com/woocommerce/woocommerce-ios/pull/4505]
+- [internal] Stats tab: added network sync throttling [https://github.com/woocommerce/woocommerce-ios/pull/4494]
+
+7.0
+-----
+- [**] Order Detail: now we display Order Items and Shipping Label Packages as separate sections. [https://github.com/woocommerce/woocommerce-ios/pull/4445]
+- [*] Fix: Orders for a variable product with different configurations of a single variation will now show each order item separately. [https://github.com/woocommerce/woocommerce-ios/pull/4445]
+- [*] If the Orders, Products, or Reviews lists can't load, a banner now appears at the top of the screen with links to troubleshoot or contact support. [https://github.com/woocommerce/woocommerce-ios/pull/4400, https://github.com/woocommerce/woocommerce-ios/pull/4407]
+- [*] Fix: Stats tabs are now displayed and ordered correctly in RTL languages. [https://github.com/woocommerce/woocommerce-ios/pull/4444]
+- [*] Fix: Missing "Add Tracking" button in orders details. [https://github.com/woocommerce/woocommerce-ios/pull/4520]
+
+
+6.9
+-----
+- [*] Order Detail: now we display a loader on top, to communicate that the order detail view has not yet been fully loaded. [https://github.com/woocommerce/woocommerce-ios/pull/4396]
+- [*] Products: You can edit product attributes for variations right from the main product form. [https://github.com/woocommerce/woocommerce-ios/pull/4350]
+- [*] Improved CTA. "Print Shipping Label" instead of "Reprint Shipping Label". [https://github.com/woocommerce/woocommerce-ios/pull/4394]
+- [*] Improved application log viewer. [https://github.com/woocommerce/woocommerce-ios/pull/4387]
+- [*] Improved the experience when creating the first variation. [https://github.com/woocommerce/woocommerce-ios/pull/4405]
+
+6.8
+-----
+
+- [***] Dropped iOS 13 support. From now we support iOS 14 and later. [https://github.com/woocommerce/woocommerce-ios/pull/4209]
+- [**] Products: Added the option to create and edit a virtual product directly from the product detail screen. [https://github.com/woocommerce/woocommerce-ios/pull/4214]
+
+6.7
+-----
+- [**] Add-Ons: Order add-ons are now available as a beta feature. To try it, enable it from settings! [https://github.com/woocommerce/woocommerce-ios/pull/4119]
+
+6.6
+-----
+- [*] Fix: Product variations only support at most one image, so we won't show an option to add a second one. [https://github.com/woocommerce/woocommerce-ios/pull/3994]
+- [*] Fix: The screen to select images from the Media Library would sometimes crash when the library had a specific number of images. [https://github.com/woocommerce/woocommerce-ios/pull/4003]
+- [*] Improved error messages for logins. [https://github.com/woocommerce/woocommerce-ios/pull/3957]
+
+6.5
+-----
+- [*] Fix: Product images with non-latin characters in filenames now will load correctly and won't break Media Library. [https://github.com/woocommerce/woocommerce-ios/pull/3935]
+- [*] Fix: The screen to select images from the Media Library would sometimes crash when the library had a specific number of images. [https://github.com/woocommerce/woocommerce-ios/pull/4070]
+
+6.4
+-----
+- [*] Login: New design and illustrations for the initial login screen, promoting the app's main features. [https://github.com/woocommerce/woocommerce-ios/pull/3867]
+- [*] Enhancement/fix: Unify back button style across the app. [https://github.com/woocommerce/woocommerce-ios/pull/3872]
+
+6.3
+-----
+- [**] Products: Now you can add variable products from the create product action sheet. [https://github.com/woocommerce/woocommerce-ios/pull/3836]
+- [**] Products: Now you can easily publish a product draft or pending product using the navigation bar buttons [https://github.com/woocommerce/woocommerce-ios/pull/3846]
+- [*] Fix: In landscape orientation, all backgrounds on detail screens and their subsections now extend edge-to-edge. [https://github.com/woocommerce/woocommerce-ios/pull/3808]
+- [*] Fix: Creating an attribute or a variation no longer saves your product pending changes. [https://github.com/woocommerce/woocommerce-ios/pull/3832]
+- [*] Enhancement/fix: image & text footnote info link rows are now center aligned in order details reprint shipping label info row and reprint screen. [https://github.com/woocommerce/woocommerce-ios/pull/3805]
+
+6.2
+-----
+
+- [***] Products: When editing a product, you can now create/delete/update product variations, product attributes and product attribute options. https://github.com/woocommerce/woocommerce-ios/pull/3791
+- [**] Large titles are enabled for the four main tabs like in Android. In Dashboard and Orders tab, a workaround is implemented with some UI/UX tradeoffs where the title size animation is not as smooth among other minor differences from Products and Reviews tab. We can encourage beta users to share any UI issues they find with large titles. [https://github.com/woocommerce/woocommerce-ios/pull/3763]
+- [*] Fix: Load product inventory settings in read-only mode when the product has a decimal stock quantity. This fixes the products tab not loading due to product decoding errors when third-party plugins enable decimal stock quantities. [https://github.com/woocommerce/woocommerce-ios/pull/3717]
+- [*] Fix: Loading state stuck in Reviews List. [https://github.com/woocommerce/woocommerce-ios/pull/3753]
+
+6.1
+-----
+- [**] Products: When editing variable products, you can now edit the variation attributes to select different attribute options. [https://github.com/woocommerce/woocommerce-ios/pull/3628]
+- [*] Fixes a bug where long pressing the back button sometimes displayed an empty list of screens.
+- [*] Product Type: Updated product type detail to display "Downloadable" if a product is downloadable. [https://github.com/woocommerce/woocommerce-ios/pull/3647]
+- [*] Product Description: Updated the placeholder text in the Aztec Editor screens to provide more context. [https://github.com/woocommerce/woocommerce-ios/pull/3668]
+- [*] Fix: Update the downloadable files row to read-only, if the product is accessed from Order Details. [https://github.com/woocommerce/woocommerce-ios/pull/3669]
+- [*] Fix: Thumbnail image of a product wasn't being loaded correctly in Order Details. [https://github.com/woocommerce/woocommerce-ios/pull/3678]
+- [*] Fix: Allow product's `regular_price` to be a number and `sold_individually` to be `null` as some third-party plugins could alter the type in the API. This could help with the products tab not loading due to product decoding errors. [https://github.com/woocommerce/woocommerce-ios/pull/3679]
+- [internal] Attempted fix for a crash in product image upload. [https://github.com/woocommerce/woocommerce-ios/pull/3693]
+
+6.0
+-----
+- [**] Due to popular demand, the product SKU is displayed once again in Order Details screen. [https://github.com/woocommerce/woocommerce-ios/pull/3564]
+- [*] Updated copyright notice to WooCommerce
+- [*] Fix: top performers in "This Week" tab should be showing the same data as in WC Admin.
+- [*] Fix: visitor stats in Dashboard should be more consistent with web data on days when the end date for more than one tab is the same (e.g. "This Week" and "This Month" both end on January 31). [https://github.com/woocommerce/woocommerce-ios/pull/3532]
+- [*] Fix: navbar title on cross-sells products list displayed title for upsells [https://github.com/woocommerce/woocommerce-ios/pull/3565]
+- [*] Added drag-and-drop sorting to Linked Products [https://github.com/woocommerce/woocommerce-ios/pull/3548]
+- [internal] Refactored Core Data migrator stack to help reduce crashes [https://github.com/woocommerce/woocommerce-ios/pull/3523]
+
+
+5.9
+-----
+- [**] Product List: if a user applies custom sort orders and filters in the Product List, now when they reopen the app will be able to see the previous settings applied. [https://github.com/woocommerce/woocommerce-ios/pull/3454]
+- [*] Removed fulfillment screen and moved fulfillment to the order details screen. [https://github.com/woocommerce/woocommerce-ios/pull/3453]
+- [*] Fix: billing information action sheets now are presented correctly on iPad. [https://github.com/woocommerce/woocommerce-ios/pull/3457]
+- [*] fix: the rows in the product search list now don't have double separators. [https://github.com/woocommerce/woocommerce-ios/pull/3456]
+- [*] Fix: During login, the spinner when a continue button is in loading state is now visible in dark mode. [https://github.com/woocommerce/woocommerce-ios/pull/3472]
+- [*] fix: when adding a note to an order, the text gets no more deleted if you tap on “Email note to customer”. [https://github.com/woocommerce/woocommerce-ios/pull/3473]
+- [*] Added Fees to order details. [https://github.com/woocommerce/woocommerce-ios/pull/3475]
+- [*] fix: now we don't show any more similar alert notices if an error occurred. [https://github.com/woocommerce/woocommerce-ios/pull/3474]
+- [*] fix: in Settings > Switch Store, the spinner in the "Continue" button at the bottom is now visible in dark mode. [https://github.com/woocommerce/woocommerce-ios/pull/3468]
+- [*] fix: in order details, the shipping and billing address are displayed in the order of the country (in some eastern Asian countries, the address starts from the largest unit to the smallest). [https://github.com/woocommerce/woocommerce-ios/pull/3469]
+- [*] fix: product is now read-only when opened from the order details. [https://github.com/woocommerce/woocommerce-ios/pull/3491]
+- [*] fix: pull to refresh on the order status picker screen does not resets anymore the current selection. [https://github.com/woocommerce/woocommerce-ios/pull/3493]
+- [*] When adding or editing a link (e.g. in a product description) link settings are now presented as a popover on iPad. [https://github.com/woocommerce/woocommerce-ios/pull/3492]
+- [*] fix: the glitch when launching the app in logged out state or after tapping "Try another account" in store picker is now gone. [https://github.com/woocommerce/woocommerce-ios/pull/3498]
+- [*] Minor enhancements: in product editing form > product reviews list, the rows don't show highlighted state on tap anymore since they are not actionable. Same for the number of upsell and cross-sell products in product editing form > linked products. [https://github.com/woocommerce/woocommerce-ios/pull/3502]
+
+
+5.8
+-----
+- [***] Products M5 features are now available to all. Products M5 features: add and edit linked products, add and edit downloadable files, product deletion. [https://github.com/woocommerce/woocommerce-ios/pull/3420]
+- [***] Shipping labels M1 features are now available to all: view shipping label details, request a refund, and reprint a shipping label via AirPrint. [https://github.com/woocommerce/woocommerce-ios/pull/3436]
+- [**] Improved login flow, including better error handling. [https://github.com/woocommerce/woocommerce-ios/pull/3332]
+
+
+5.7
+-----
+- [***] Dropped iOS 12 support. From now we support iOS 13 and later. [https://github.com/woocommerce/woocommerce-ios/pull/3216]
+- [*] Fixed spinner appearance in the footer of orders list. [https://github.com/woocommerce/woocommerce-ios/pull/3249]
+- [*] In order details, the image for a line item associated with a variation is shown now after the variation has been synced. [https://github.com/woocommerce/woocommerce-ios/pull/3314]
+- [internal] Refactored Core Data stack so more errors will be propagated. [https://github.com/woocommerce/woocommerce-ios/pull/3267]
+
+
+5.6
+-----
+- [**] Fixed order list sometimes not showing newly submitted orders.
+- [*] now the date pickers on iOS 14 are opened as modal view. [https://github.com/woocommerce/woocommerce-ios/pull/3148]
+- [*] now it's possible to remove an image from a Product Variation if the WC version 4.7+. [https://github.com/woocommerce/woocommerce-ios/pull/3159]
+- [*] removed the Product Title in product screen navigation bar. [https://github.com/woocommerce/woocommerce-ios/pull/3187]
+- [*] the icon of the cells inside the Product Detail are now aligned at 10px from the top margin. [https://github.com/woocommerce/woocommerce-ios/pull/3199]
+- [**] Added the ability to issue refunds from the order screen. Refunds can be done towards products or towards shipping. [https://github.com/woocommerce/woocommerce-ios/pull/3204]
+- [*] Prevent banner dismiss when tapping "give feedback" on products screen. [https://github.com/woocommerce/woocommerce-ios/pull/3221]
+- [*] Add keyboard dismiss in Add Tracking screen [https://github.com/woocommerce/woocommerce-ios/pull/3220]
+
+
+5.5
+-----
+- [**] Products M4 features are now available to all. Products M4 features: add a simple/grouped/external product with actions to publish or save as draft. [https://github.com/woocommerce/woocommerce-ios/pull/3133]
+- [*] enhancement: Order details screen now shows variation attributes for WC version 4.7+. [https://github.com/woocommerce/woocommerce-ios/pull/3109]
+- [*] fix: Product detail screen now includes the number of ratings for that product. [https://github.com/woocommerce/woocommerce-ios/pull/3089]
+- [*] fix: Product subtitle now wraps correctly in order details. [https://github.com/woocommerce/woocommerce-ios/pull/3201]
+
+
+5.4
+-----
+- [*] fix: text headers on Product price screen are no more clipped with large text sizes. [https://github.com/woocommerce/woocommerce-ios/pull/3090]
+
+
+5.4
+-----
+- [*] fix: the footer in app Settings is now correctly centered.
+- [*] fix: Products tab: earlier draft products now show up in the same order as in core when sorting by "Newest to Oldest".
+- [*] enhancement: in product details > price settings, the sale dates can be edited inline in iOS 14 using the new date picker. Also, the sale end date picker editing does not automatically end on changes anymore. [https://github.com/woocommerce/woocommerce-ios/pull/3044]
+- [*] enhancement: in order details > add tracking, the date shipped can be edited inline in iOS 14 using the new date picker. [https://github.com/woocommerce/woocommerce-ios/pull/3044]
+- [*] enhancement: in products list, the "(No Title)" placeholder will be showed when a product doesn't have the title set. [https://github.com/woocommerce/woocommerce-ios/pull/3068]
+- [*] fix: the placeholder views in the top dashboard chart and orders tab do not have unexpected white background color in Dark mode in iOS 14 anymore. [https://github.com/woocommerce/woocommerce-ios/pull/3063]
+
+
+5.3
+-----
+- [**] In Settings > Experimental Features, a Products switch is now available for turning Products M4 features on and off (default off). Products M4 features: add a simple/grouped/external product with actions to publish or save as draft.
+- [*] Opening a product from order details now shows readonly product details of the same styles as in editable product details.
+- [*] Opening a product variation from order details now shows readonly product variation details and this product variation does not appear in the Products tab anymore.
+- [*] Enhancement: when not saving a product as "published", the in-progress modal now shows title and message like "saving your product" instead of "publishing your product".
+- [*] In product and variation list, the stock quantity is not shown anymore when stock management is disabled.
+- [*] Enhancement: when the user attempts to dismiss the product selector search modal while at least one product is selected for a grouped product's linked products, a discard changes action sheet is shown.
+- [internal] Renamed a product database table (Attribute) to GenericAttribute. This adds a new database migration.  [https://github.com/woocommerce/woocommerce-ios/pull/2883]
+- [internal] Refactored the text fields in the Manual Shipment Tracking page. [https://github.com/woocommerce/woocommerce-ios/pull/2979]
+- [internal] Attempt fix for startup crashes. [https://github.com/woocommerce/woocommerce-ios/pull/3069]
+
+
+5.2
+-----
+- [**] Products: now you can editing basic fields for non-core products (whose product type is not simple/external/variable/grouped) - images, name, description, readonly price, readonly inventory, tags, categories, short description, and product settings.
+- [*] Enhancement: for variable products, the stock status is now shown in its variation list.
+- [*] Sign In With Apple: if the Apple ID has been disconnected from the WordPress app (e.g. in Settings > Apple ID > Password & Security > Apps using Apple ID), the app is logged out on app launch or app switch.
+- [*] Now from an Order Detail it's only possible to open a Product in read-only mode.
+- [internal] #2881 Upgraded WPAuth from 1.24 to 1.26-beta.12. Regressions may happen in login flows.
+- [internal] #2896 Configured the same user agent header for all the network requests made through the app.
+- [internal] #2879 After logging out, the persistent store is not reset anymore to fix a crash in SIWA revoked token scenario after app launch (issue #2830). No user-facing changes are intended, the data should be associated with a site after logging out and in like before.
+
+5.1
+-----
+- [*] bugfix: now reviews are refreshed correctly. If you try to delete or to set as spam a review from the web, the result will match in the product reviews list.
+- [*] If the Products switch is on in Settings > Experimental Features:
+  - For a variable product, the stock status is not shown in the product details anymore when stock management is disabled since stock status is controlled at variation level.
+- [internal] The Order List and Orders Search → Filter has a new backend architecture (#2820). This was changed as an experiment to fix #1543. This affects iOS 13.0 users only. No new behaviors have been added. Github project: https://git.io/JUBco.
+- [*] Orders → Search list will now show the full counts instead of “99+”. #2825
+
+
+5.0
+-----
+- [*] Order details > product details: tapping outside of the bottom sheet from "Add more details" menu does not dismiss the whole product details anymore.
+- [*] If the Products switch is on in Settings > Experimental Features, product editing for basic fields are enabled for non-core products (whose product type is not simple/external/variable/grouped) - images, name, description, readonly price, readonly inventory, tags, categories, short description, and product settings.
+- [*] Order Detail: added "Guest" placeholder on Order Details card when there's no customer name.
+- [*] If the Products switch is on in Settings > Experimental Features:
+  - Product editing for basic fields are enabled for non-core products (whose product type is not simple/external/variable/grouped) - images, name, description, readonly price, readonly inventory, tags, categories, short description, and product settings.
+  - Inventory and shipping settings are now editable for a variable product.
+  - A product variation's stock status is now editable in inventory settings.
+  - Reviews row is now hidden if reviews are disabled.
+  - Now it's possible to open the product's reviews screen also if there are no reviews.
+  - We improved our VoiceOver support in Product Detail screen.
+- [*] In Settings, the "Feature Request" button was replaced with "Send Feedback" (Survey) (https://git.io/JUmUY)
+
+
+4.9
+-----
+- [**] Sign in with Apple is now available in the log in process.
+- [**] In Settings > Experimental Features, a Products switch is now available for turning Products M3 features on and off for core products (default off for beta testing). Products M3 features: edit grouped, external and variable products, enable/disable reviews, change product type and update categories and tags.
+- [*] Edit Products: the update action now shows up on the product details after updating just the sale price.
+- [*] Fix a crash that sometimes happen when tapping on a Product Review push notification.
+- [*] Variable product > variation list: a warning banner is shown if any variations do not have a price, and warning text is shown on these variation rows.
+
+
+4.8
+-----
+- [*] Enabled right/left swipe on product images.
+
+
+4.7
+-----
+- [*] Fixed an intermittent crash when sending an SMS from the app.
+
+
+4.6
+-----
+- [*] Fix an issue in the y-axis values on the dashboard charts where a negative value could show two minus signs.
+- [*] When a simple product doesn't have a price set, the price row on the product details screen now shows "Add Price" placeholder instead of an empty regular price.
+- [*] If WooCommerce 4.0 is available the app will show the new stats dashboard, otherwise will show a banner indicating the user to upgrade.
+- [*] The total orders row is removed from the readonly product details (products that are not a simple product) to avoid confusion since it's not shown on the editable form for simple products.
+
+
+4.5
+-----
+- [**] Products: now you can update product images, product settings, viewing and sharing a product.
+- [*] In Order Details, the item subtotal is now shown on the right side instead of the quantity. The quantity can still be viewed underneath the product name.
+- [*] In Order Details, SKU was removed from the Products List. It is still shown when fulfilling the order or viewing the product details.
+- [*] Polish the loading state on the product variations screen.
+- [*] When opening a simple product from outside of the Products tab (e.g. from Top Performers section or an order), the product name and ellipsis menu (if the Products feature switch is enabled) should be visible in the navigation bar.
+
+
+4.4
+-----
+- Order Detail: the HTML shipping method is now showed correctly
+- [internal] Logging in via 'Log in with Google' has changes that can cause regressions. See https://git.io/Jf2Fs for full testing details.
+- [**] Fix bugs related to push notifications: after receiving a new order push notification, the Reviews tab does not show a badge anymore. The application icon badge number is now cleared by navigating to the Orders tab and/or the Reviews tab, depending on the types of notifications received.
+- [*] The discard changes prompt now only appears when navigating from product images screen if any images have been deleted.
+- [*] Fix the issue where product details screen cannot be scrolled to the bottom in landscape after keyboard is dismissed (e.g. from editing product title).
+- [*] The product name is now shown in the product details navigation bar so that the name is always visible.
+- [*] The images pending upload should be visible after editing product images from product details.
+- [*] The discard changes prompt does not appear when navigating from product settings detail screens with a text field (slug, purchase note, and menu order) anymore.
+- [*] Fix the wrong cell appearance in the order status list.
+- [*] The "View product in store" action will be shown only if the product is published.
+- [internal] Modified the component used for fetching data from the database. Please watch out for crashes in lists.
+
+
+4.3
+-----
+- Products: now the Product details can be edited and saved outside Products tab (e.g. from Order details or Top Performers).
+- [internal]: the navigation to the password entry screen has changed and can cause regressions. See https://git.io/JflDW for testing details.
+- [internal] Refactored some API calls for fetching a Note, Product, and Product Review.
+- Products: we improved our VoiceOver support in Product Price settings
+- In Settings > Experimental Features, a Products switch is now available for turning Products M2 features on and off for simple products (default off for beta testing). Products M2 features: update product images, product settings, viewing and sharing a product.
+- The WIP banner on the Products tab is now collapsed by default for more vertical space.
+- Dropped iOS 11 support. From now we support iOS 12 and later.
+- In Order Details, the Payment card is now shown right after the Products and Refunded Products cards.
+
+
+4.2
+-----
+- Products: now tapping anywhere on a product cell where you need to insert data, like in Product Price and Product Shipping settings, you start to edit the text field.
+- Products: now the keyboard pop up automatically in Edit Description
+- The Processing orders list will now show upcoming (future) orders.
+- Improved stats: fixed the incorrect time range on "This Week" tab when loading improved stats on a day when daily saving time changes.
+- [internal]: the "send magic link" screen has navigation changes that can cause regressions. See https://git.io/Jfqio for testing details.
+- The Orders list is now automatically refreshed when reopening the app.
+- The Orders list is automatically refreshed if a new order (push notification) comes in.
+- Orders -> Search: The statuses now shows the total number of orders with that status.
+
+
+4.1
+-----
+- Fix an intermittent crash when downloading Orders
+- The Photo Library permission alert shouldn't be prompted when opening the readonly product details or edit product for simple products, which is reproducible on iOS 11 or 12 devices. (The permission is only triggered when uploading images in Zendesk support or in debug builds with Products M2 enabled.)
+- [internal] Updated the empty search result views for Products and Orders. https://git.io/Jvdap
+
+
+4.0
+-----
+- Products is now available with limited editing for simple products!
+- Fix pulling to refresh on the Processing tab sometimes will not show the up-to-date orders.
+- Edit Product > Price Settings: schedule sale is now available even when either the start or end date is not set, and the sale end date can be removed now.
+- Improved stats: fixed a crash when loading improved stats on a day when daily saving time changes.
+- [internal] Changed the Shipping and Tax classes list loading so that any cached data is shown right away
+- [internal] Edit Products M2: added an image upload source for product images - WordPress Media Library.
+- [internal] Slightly changed the dependency graph of the database fetching component. Please watch out for data loading regressions.
+- [internal] the signup and login Magic Link flows have code changes. See https://git.io/JvyB3 for testing details.
+- [internal] the login via Magic Link flows have code changes. See https://git.io/JvyB3 for testing details.
+- [internal] the login via Continue with Google flows have code changes that can cause regressions. See https://git.io/Jvyjg for testing details.
+- [internal] the signup and login Magic Link flows have code changes. See https://git.io/JvyB3 for testing details.
+- [internal] under Edit Products M2 feature flag, there are 4 ways to sort the products on the products tab.
+- [internal] the login flow has changes to the 2-factor authentication navigation. See https://git.io/JvdKP for testing details.
+
+3.9
+-----
+- bugfix: now in the Order List the order status label is no more clipped
+- bugfix: now the launch screen is no more stretched
+- The Shipping Provider flow, will be called now Shipping Carrier.
+- Edit Products: in price settings, the order of currency and price field follows the store currency options under wp-admin > WooCommerce > Settings > General.
+- [internal] The signup and login flows have code changes. See https://git.io/Jv1Me for testing details.
+
+3.8
+-----
+- Dashboard stats: any negative revenue (from refunds for example) for a time period are shown now.
+- Redesigned Orders List: Processing and All Orders are now shown in front. Filtering was moved to the Search view.
+- Fix Reviews sometimes failing to load on some WooCommerce configurations
+- Experimental: a Products feature switch is visible in Settings > Experimental Features that shows/hides the Products tab, and allow to edit a product.
+
+3.7
+-----
+- Dashboard: now tapping on a product on "Top Performers" section open the product detail
+
+3.6
+-----
+- Order Details: see a list of issued refunds inside the order detail screen
+- Orders tab: Orders to fulfill badge shows numbers 1-99, and now 99+ for anything over 99. Previously, it was 9+.
+- Orders tab: The full total amount is now shown.
+- Order Details & Product UI: if a Product name has HTML escape characters, they should be decoded in the app.
+- Order Details: if the Order has multiple Products, tapping on any Product should open the same Product now.
+- bugfix: the orders badge on tab bar now is correctly refreshed after switching to a store with badge count equal to zero.
+- The orders tab now localizes item quantities and the order badge.
+
+
+3.5
+-----
+- bugfix: when the app is in the foreground while receiving a push notification, the badge on the Orders tab and Reviews tab should be updated correctly based on the type of the notification.
+- bugfix: after logging out and in, the Product list should be loaded to the correct store instead of being empty.
+- bugfix: in Contact Support, a message should always be sent successfully now.
+
+3.4
+-----
+- bugfix: on the Order Details screen, the product quantity title in the 2-column header view aligns to the right now
+- bugfix: tapping on a new Order push notification, it used to go to the Reviews tab. Now it should go to the new Order screen
+- bugfix: on the Products tab, if tapping on a Product and then switching stores, the old Product details used to remain on the Products tab. Now the Product list is always shown on the Products tab after switching stores.
+- Dark mode: colors are updated up to design for the navigation bar, tab bar, Fulfill Order > add tracking icon, Review Details > product link icon.
+- bugfix/enhancement: on the Products tab, if there are no Products the "Work In Progress" banner is shown with an image placeholder below now.
+- bugfix: the deleted Product Variations should not show up after syncing anymore.
+- bugfix: now the shipping address in the Order Detail is hidden if the order contains only virtual products
+- bugfix: when logged out, Contact Support should be enabled now after typing a valid email address with an email keyboard type.
+
+3.3
+-----
+- bugfix: add some padding to an order item image in the Fulfillment view, when no SKU exists
+- bugfix: View Billing Information > Contact Details: the email button wouldn't do anything if you don't have an email account configured in the Mail app. Now an option to copy the email address is presented instead of doing nothing.
+- bugfix: Fulfill Order screen now displays full customer provided note, instead of cutting it to a single line.
+- bugfix: Fixed clipped content on section headings with larger font sizes
+- bugfix: Fixed footer overlapping the last row in Settings > About with larger font sizes
+- bugfix: the Orders badge on tab bar now is correctly refreshed after switching stores
+
+3.2.1
+-----
+- bugfix: the order detail status and "Begin fulfillment" button now are correctly updated when the order status changes
+- bugfix: after adding a new order note, now it appear correctly inside the order detail
+
+3.2
+-----
+- Experimental: a Products feature switch is visible in Settings > Experimental Features that shows/hides the Products tab with a Work In Progress banner at the top.
+- Experimental: if a Product has variations, the variants info are shown on the Product Details that navigates to a list of variations with each price or visibility shown.
+- Enhancement: Support for dark mode
+- bugfix: Settings no longer convert to partial dark mode.
+- Experimental: Support the latest wc-admin plugin release, v0.23.0 and up
+
+3.1
+-----
+- The order detail view now includes the shipping method of the order.
+- Enhancement: The Reviews tab now presents all the Product Reviews
+- Updated appearance of Order Details - temporarily disabling dark mode.
+- bugfix: fixed UI appearance on cells of Order List when tapping with dark mode enabled.
+- bugfix: Reviews no longer convert to partial dark mode. Dark mode coming soon!
+- bugfix: Order Details now has the right space between cells.
+- bugfix: update the new stats endpoint for WC Admin plugin version 0.22+, and notify the user about the minimum plugin version when they cannot see the new stats. It'd be great to also mention this in the App Store release notes: the new stats UI now requires WC Admin plugin version 0.22+.
+
+3.0
+-----
+- bugfix: for sites with empty site time zone in the API (usually with UTC specified in wp-admin settings) and when the site time zone is not GMT+0, the stats v4 data no longer has the wrong boundaries (example in #1357).
+- bugfix: fixed a UI appearance problem on mail composer on iOS 13.
+
+2.9
+-----
+- bugfix: the badge "9+" on the Orders tab doesn't overlap with the tab label on iPhone SE/8 landscape now, and polished based on design spec.
+- bugfix: the Top Performers in the new stats page should not have a dark header bar when launching the app in Dark mode.
+- Enhancement: preselect current Order status when editing the status with a list of order statuses.
+- bugfix: on Orders tab, the order status filter now stays after changing an Order status.
+
+2.8
+-----
+
+2.7
+-----
+- Enhancement: Enhancements to the Order Details screen, adding more customer information.
+- bugfix: the App Logs shouldn't be editable, only copy / paste.
+- bugfix: Reviews were not localized.
+- bugfix: On log in, some users would see the Continue button but be unable to Continue, due to errors with the account. A new "Try another account" button has been added as an option.
+- bugfix: Product Details page was displaying the Price in the wrong currency.
+- Enhancement: removed the "New Orders" card from the My store tab, now that the Orders tab displays the same information.
+- Added brand new stats page for user with the WooCommerce Admin plugin and provided an option for users to opt in or out directly from the Settings page.
+- bugfix: Order Details: icon on "Details" cell for fulfilled order can be wrong.
+
+2.6
+-----
+- bugfix: 9+ orders in the orders badge text is now easier to read
+- bugfix: Keep those sign-in bugs coming! We tracked down and fixed a `Log in with Jetpack` issue, where users with a Byte Order Mark in their `wp-config.php` file were returning error responses during API requests. These users would see their store listed in the sign-in screen, but were unable to tap the Continue button.
+- bugfix: prevents a potential edge case where the login screen could be dismissed in a future version of iOS.
+- bugfix: While tuning up the behind-the-scenes for Order Detail screens, we accidentally lost the ability to automatically download any missing product images. Product image downloads restored!
+
+2.5
+-----
+- bugfix: on certain devices, pulling down to refresh on Order Details screen used to result in weird UI with misplaced labels. Should be fixed in this release.
+- Enhancement: Display a badge in the bottom tab, overlapping the Orders icon, to indicate the number of orders processing.
+- Enhancement: The Notifications tab has been replaced by Reviews
+
+2.4
+-----
+- New feature: in Order Details > Shipment Tracking, a new action is added to the "more" action menu for copying tracking number.
+- Enhancement: updated the footer in Settings to inform users that we're hiring.
+- bugfix & improvement: when Jetpack site stats module is turned off or when user has no permission to view site stats, the generic error toast is not shown to the user anymore. Additionally, the visitors stats UI is shown/hidden when the Jetpack module is activated/deactivated respectively.
+
+2.3
+-----
+- Improvement: improved Dynamic Type support in the body of the notification in the Notifications tab.
+
+2.2
+-----
+- improvement: opting out of Tracks syncs with WordPress.com
+
+2.1
+-----
+- improvement: improved support for RTL languages in the Dashboard
+- enhancement: You can now view product images on orders. Tapping on Products in Orders will present a view-only version of the Product's Details.
+
+2.0
+-----
+- bugfix: dates in the Order Details screen are now localised.
+- improvement: improved support for larger font sizes in the login screen
+
+1.9
+-----
+- bugfix: fixes "Unable to load content" error message when attempting to get Top Performers content.
+- new feature: You can now manually add shipment tracking to an Order. This feature is for users who have the [Shipment Tracking plugin](https://woocommerce.com/products/shipment-tracking) installed.
+- bugfix: fixes Store Picker: some users are unable to continue after logging in.
+- bugfix: fixes a crash when the network connection is slow
+
+1.8
+-----
+
+1.7.1
+-----
+- Fixed a bug where Order List did not load for some users.
+- update: this app supports iOS 12.0 and up.
+- improvement: improved support for large text sizes.
+- bugfix: fixes Order List not loading for some users.
+- bugfix: fixes "Unable to load content" error message when attempting to get Top Performers content.
+
+1.7
+-----
+- improvement: you can now log in using a site address.
+
+1.6
+-----
+- improvement: Tracking numbers can now be copied to the pasteboard from the order details screen.
+
+1.5
+-----
+- bugfix: Sometimes Settings would style all the options like "Log Out". No longer happens now.
+- bugfix: order status refreshes upon pull-to-refresh in Order Details
+- bugfix: payment status label background color showing up beyond rounded border
+- improvement: change top performers text from "Total Product Order" to "Total orders" for clarity
+- bugfix: fixed an issue on the order details screen where the shipment tracking dates were incorrect
+
+1.4
+-----
+- bugfix: fix a crash happening on log out
+- new feature: Add shipment tracking to Order Details screen
+- improvement: The store switcher now allows you to go back to the previous screen without logging you out
+- improvement: Custom order status labels are now supported! Instead of just displaying the order status slug and capitalizing the slug, the custom order status label will now be fetched from the server and properly displayed.
+- improvement: Filtering by custom order status now supported!
+- new feature: You can now manually change the status of an order on the order details screen
+- bugfix: correctly flips chevron on Dashboard > New Orders, to support RTL languages.
+- bugfix: fixed an issue on the order details screen where the shipment tracking dates were incorrect
+
+1.3
+-----
+- bugfix: Allows for decimal quantities which some extensions have
+- new feature: quick site select. Navigate to Settings > select row with store website.
+- improvement: Updated the colors of the bars in the charts for better readability
+- improvement: Present an error message with an option to retry when adding a note to an order fails
+- improvement: Present an error message with an option to retry when fulfilling an order fails
+- bugfix: Log out of the current account right after selecting "Try another account" in store picker
+- improvement: Use the store name for the title of the view in "My store" tab
+- improvement: Add an alert to let the user know about our new store switcher
+- improvement: Display Address in Order Details screen unless every field is empty
